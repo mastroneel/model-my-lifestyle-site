@@ -1,6 +1,7 @@
 @import 'variables';
 
 footer {
+  margin-top: 100px;
   background-color: $forest;
   padding-top: 20px;
   color: $aqua;
@@ -50,6 +51,8 @@ footer {
       .app-link-img {
         width: 100%;
         margin-bottom: 20px;
+        max-width: 180px;
+        display: block;
       }
       .sitemap-menu {
         display: inline;
@@ -77,12 +80,15 @@ footer {
         border-bottom: 4px solid $dark-forest;
         // margin-bottom: 40px;
         .footer-logo {
-          width: 300px;
+          width: 350px;
         }
         .social-icons {
           text-align: right;
           list-style-type: none;
           line-height: 60px;
+          margin: 0;
+          margin-top: 30px;
+          padding: 0;
           li {
             display: inline-flex;
             margin: 0 10px;
@@ -99,14 +105,14 @@ footer {
   }
   .sub-footer {
     background-color: $dark-forest;
-    height: 70px;
-    line-height: 70px;
+    height: 100px;
+    line-height: 100px;
     p {
       color: $aqua;
       font-size: 12px !important;
       text-align: right;
       margin-top: 0 !important;
-      line-height: 70px !important;
+      line-height: 100px !important;
     }
     ul {
       list-style-type: none;
@@ -143,4 +149,16 @@ footer {
 :-moz-placeholder { /* Firefox 18- */
   color: $dark-forest;
   padding-left: 25px;
+}
+
+@media (max-width: 991px) {
+  footer {
+    .content-margins {
+      .row.social-row {
+        .social-icons {
+          text-align: left;
+        }
+      }
+    }
+  }
 }

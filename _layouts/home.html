@@ -1,0 +1,197 @@
+---
+layout: default
+---
+
+<div class="slider-container">
+  <div class="inner">
+
+    <div id="slider">
+      <a href="#" class="control_next">></a>
+      <a href="#" class="control_prev"><</a>
+      <ul>
+        <li>Slide 1</li>
+        <li>Slide 2</li>
+        <li>Slide 3</li>
+        <li>Slide 4</li>
+      </ul>
+    </div>
+
+  <!-- <div class="slider_option">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Autoplay Slider</label>
+  </div> -->
+  </div>
+</div>
+
+
+<div class="stats-container">
+  <div class="inner">
+    <div class="content-margins">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="orange center">
+            <h3>50,000+</h3>
+            <h4>people</h4>
+            <h5>used our app</h5>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="green center">
+            <h3>25,000+</h3>
+            <h4>kilos</h4>
+            <h5>have already been lost</h5>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="red center">
+            <h3>499,000</h3>
+            <h4>happy users</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box-bg-container">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-1">
+          <h2 class="yellow">
+            Stay <br>motivated <br>and get <br>inspired
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-2">
+          <h2 class="pink">
+            Get tips <br> to stay fit <br> and <br> healthy
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-3">
+          <h2 class="lime">
+            Track <br> your <br> progress
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-4">
+          <h2 class="aqua">
+            Meet <br> our <br> community
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box-white-container">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-5 orange-background">
+          <h1 class="yellow">
+            Choose <br>the healthy <br> lifestyle
+          </h1>
+          <a class="button orange-button" href="/workouts">
+            <span class="button-text">Workouts</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/food">
+            <span class="button-text">Food</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/inspiration">
+            <span class="button-text">Inspiration</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/health-tips">
+            <span class="button-text">Health & Tips</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/All articles">
+            <span class="button-text">All articles</span><span class="caret">></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-6">
+          <div class="sub-box sub-box-1">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-7">
+          <div class="sub-box sub-box-2">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-8">
+          <div class="sub-box sub-box-3">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+jQuery(document).ready(function ($) {
+
+$('#checkbox').change(function(){
+  setInterval(function () {
+      moveRight();
+  }, 3000);
+});
+
+var slideCount = $('#slider ul li').length;
+var slideWidth = $('#slider ul li').width();
+var slideHeight = $('#slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+$('#slider').css({ width: slideWidth, height: slideHeight });
+
+$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+  $('#slider ul li:last-child').prependTo('#slider ul');
+
+  function moveLeft() {
+      $('#slider ul').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('#slider ul li:last-child').prependTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  function moveRight() {
+      $('#slider ul').animate({
+          left: - slideWidth
+      }, 200, function () {
+          $('#slider ul li:first-child').appendTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  $('a.control_prev').click(function () {
+      moveLeft();
+  });
+
+  $('a.control_next').click(function () {
+      moveRight();
+  });
+
+});
+
+</script>

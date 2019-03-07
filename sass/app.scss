@@ -29,6 +29,8 @@
 @import 'variables';
 @import 'nav';
 @import 'footer';
+@import 'slider';
+@import 'home';
 
 // **************
 // general styles
@@ -130,6 +132,34 @@ a.menu {
   text-align: right;
 }
 
+.orange {
+  color: $orange;
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
+
+.pink {
+  color: $pink;
+}
+
+.aqua {
+  color: $aqua;
+}
+
+.lime {
+  color: $lime;
+}
+
+.yellow {
+  color: $yellow;
+}
+
 
 // general button styles
 .button {
@@ -194,7 +224,7 @@ a.menu {
 // red button on red background styles
 .red-background {
   background-color: $red;
-  padding: 25px;
+  // padding: 25px;
   .red-button {
     .button-text {
       color: $pink;
@@ -249,7 +279,7 @@ a.menu {
 
 // orange button on orange background styles
 .orange-background {
-  padding: 25px;
+  // padding: 25px;
   background: $orange;
   .orange-button {
     .button-text {
@@ -306,7 +336,7 @@ a.menu {
 
 // forest button on forest background styles
 .forest-background {
-  padding: 25px;
+  // padding: 25px;
   background: $forest;
   .forest-button {
     .button-text {
@@ -363,7 +393,7 @@ a.menu {
 
 // green button on green background styles
 .green-background {
-  padding: 25px;
+  // padding: 25px;
   background: $green;
   .green-button {
     .button-text {

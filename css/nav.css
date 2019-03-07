@@ -1,6 +1,5 @@
 .nav {
-  height: 70px;
-  line-height: 70px;
+  height: 100px;
   background: #84C440;
   margin: 0;
   padding: 0;
@@ -10,12 +9,13 @@
     .nav .content-margins .logo {
       float: left; }
       .nav .content-margins .logo a img {
-        width: 300px; }
+        width: 350px; }
     .nav .content-margins ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      float: right; }
+      float: right;
+      margin-top: 35px; }
       .nav .content-margins ul li {
         display: inline-flex;
         color: #d4de24; }
