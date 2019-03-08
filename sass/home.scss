@@ -21,7 +21,7 @@
   background-size: 2400px 1200px;
   background-position: center;
   background-repeat: no-repeat;
-  .col-xs-12, .col-sm-6 {
+  .col-xs-6 {
     padding: 0;
     margin: 0;
   }
@@ -71,8 +71,9 @@
   .box {
     height: 600px;
     width: 600px;
-    background-size: 100%;
+    // background-size: 100%;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .box-5 {
@@ -91,9 +92,34 @@
       margin-left: 50px;
     }
   }
+  .sub-box {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    h5 {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      padding: 25px 25px 0 25px;
+      font-size: 30px;
+    }
+    .button {
+      position: absolute;
+      bottom: -25px;
+    }
+  }
 }
 
-
+.success-stories-container {
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 65px;
+  }
+  .red-button {
+    float: right;
+  }
+}
 
 
 // *************
@@ -131,6 +157,85 @@
       }
     }
   }
+  .box-white-container {
+    .box {
+      height: 50vw;
+      width: 50vw;
+      .sub-box {
+        .button {
+          position: absolute;
+          bottom: -21px;
+          width: 100%;
+          .button-text {
+            width: 70%;
+            padding-left: 10%;
+            border: none;
+          }
+          .caret {
+            width: 20%;
+            border: none;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1100px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 45px;
+      }
+      .orange-button {
+        .button-text {
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .caret {
+          height: 40px;
+          margin-top: 3px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 876px) and (max-width: 950px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-left: 25px;
+      }
+      .orange-button {
+        margin-left: 25px;
+        .button-text {
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .caret {
+          height: 40px;
+          margin-top: 3px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 22px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 875px) {
@@ -143,13 +248,118 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 875px) {
   .box-bg-container {
     .box {
+      // height: 100vw;
+      // width: 100vw;
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 35px;
+        padding-top: 25px;
+        padding-left: 25px;
+      }
+      .orange-button {
+        margin-left: 25px;
+        margin-top: -20px;
+        .button-text {
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+        }
+        .caret {
+          height: 30px;
+          line-height: 30px;
+          margin-top: 8px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 20px;
+          line-height: 1.2;
+          padding: 10px 10px 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .stats-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-desktop {
+    display: none;
+  }
+  .box-bg-container {
+    .box {
+      // height: 100vw;
+      // width: 100vw;
+      h2 {
+        font-size: 35px;
+        padding-left: 25px !important;
+        padding-top: 25px !important;
+      }
+    }
+  }
+  .box-white-container {
+    .box-5 {
       height: 100vw;
       width: 100vw;
-      h2 {
-        font-size: 70px;
+    }
+    .box-6,
+    .box-7,
+    .box-8 {
+      height: 50vw;
+      width: 100vw;
+      .sub-box {
+        height: 100%;
+      }
+    }
+    .box {
+      .sub-box {
+        h5 {
+          font-size: 40px;
+        }
+        .button {
+          position: absolute;
+          bottom: -21px;
+          width: 100%;
+          .button-text {
+            width: 70%;
+            padding-left: 10%;
+            border: none;
+          }
+          .caret {
+            width: 20%;
+            border: none;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 40px;
+      }
+      .sub-box {
+        h5 {
+          font-size: 30px;
+        }
       }
     }
   }
@@ -159,7 +369,7 @@
   .box-bg-container {
     .box {
       h2 {
-        font-size: 60px;
+        font-size: 30px;
       }
     }
   }
@@ -170,7 +380,34 @@
   .box-bg-container {
     .box {
       h2 {
-        font-size: 50px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 30px;
+      }
+      .orange-button {
+        .button-text {
+          font-size: 16px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .caret {
+          height: 40px;
+          line-height: 40px;
+          margin-top: 3px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 25px;
+        }
       }
     }
   }
@@ -180,7 +417,37 @@
   .box-bg-container {
     .box {
       h2 {
-        font-size: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 25px;
+        padding-left: 25px;
+        padding-top: 25px;
+      }
+      .orange-button {
+        margin-left: 25px;
+        .button-text {
+          font-size: 16px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .caret {
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 20px;
+          padding: 15px 15px 0 15px;
+        }
       }
     }
   }
@@ -190,9 +457,80 @@
   .box-bg-container {
     .box {
       h2 {
-        font-size: 30px;
-        padding-left: 25px !important;
-        padding-top: 25px !important;
+        font-size: 18px;
+        padding-left: 15px !important;
+        padding-top: 15px !important;
+      }
+    }
+  }
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 25px;
+        padding-left: 25px;
+        padding-top: 25px;
+      }
+      .orange-button {
+        margin-left: 25px;
+        margin-top: -20px;
+        .button-text {
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+        }
+        .caret {
+          height: 30px;
+          line-height: 30px;
+          margin-top: 8px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 20px;
+        }
+        .button {
+          .button-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .box-white-container {
+    .box {
+      h1 {
+        font-size: 20px;
+        padding-left: 15px;
+        padding-top: 15px;
+      }
+      .orange-button {
+        margin-left: 15px;
+        margin-top: -20px;
+        .button-text {
+          font-size: 12px;
+          height: 25px;
+          line-height: 25px;
+        }
+        .caret {
+          height: 25px;
+          font-size: 20px;
+          line-height: 25px;
+          margin-top: 11px;
+        }
+      }
+      .sub-box {
+        h5 {
+          font-size: 16px;
+        }
+        .button {
+          .button-text {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

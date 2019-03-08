@@ -27,7 +27,7 @@ layout: default
 <div class="stats-container">
   <div class="inner">
     <div class="content-margins">
-      <div class="row">
+      <div class="row stats-desktop">
         <div class="col-xs-12 col-sm-4">
           <div class="orange center">
             <h3>50,000+</h3>
@@ -49,35 +49,63 @@ layout: default
           </div>
         </div>
       </div>
+
+      <div class="row stats-mobile">
+        <div class="col-xs-12">
+          <div id="stats-slider">
+            <a href="#" class="control_next2">></a>
+            <a href="#" class="control_prev2"><</a>
+            <ul>
+              <li class="green center">
+                <h3>25,000+</h3>
+                <h4>kilos</h4>
+                <h5>have already been lost</h5>
+              </li>
+              <li class="red center">
+                <h3>499,000</h3>
+                <h4>happy users</h4>
+              </li>
+              <li class="orange center">
+                <h3>50,000+</h3>
+                <h4>people</h4>
+                <h5>used our app</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+
+
+
 <div class="box-bg-container">
   <div class="inner">
     <div class="row">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-6">
         <div class="box box-1">
           <h2 class="yellow">
             Stay <br>motivated <br>and get <br>inspired
           </h2>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-6">
         <div class="box box-2">
           <h2 class="pink">
             Get tips <br> to stay fit <br> and <br> healthy
           </h2>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-6">
         <div class="box box-3">
           <h2 class="lime">
             Track <br> your <br> progress
           </h2>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-6">
         <div class="box box-4">
           <h2 class="aqua">
             Meet <br> our <br> community
@@ -87,6 +115,13 @@ layout: default
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
 
 <div class="box-white-container">
   <div class="inner">
@@ -113,24 +148,73 @@ layout: default
           </a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="box box-6">
-          <div class="sub-box sub-box-1">
 
+      <div class="col-xs-12 col-sm-6">
+        {% for post in site.posts limit:1 %}
+        <div class="box box-6" style="background-image: url('{{post.image}}');">
+          <div class="sub-box sub-box-1 red-background" style="background-color: rgba(226, 31, 38, 0.9);">
+                <h5 class="bold pink">{{post.title}}</h5>
+            <a class="button red-button toggle" href="{{post.permalink}}">
+              <span class="button-text">Read More</span><span class="caret">></span>
+            </a>
           </div>
         </div>
+        {% endfor %}
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="box box-7">
-          <div class="sub-box sub-box-2">
-
+        {% for post in site.posts limit:1 offset:1 %}
+        <div class="box box-7" style="background-image: url('{{post.image}}');">
+          <div class="sub-box sub-box-2 forest-background" style="background-color: rgba(0, 145, 113, 0.9);">
+            <h5 class="bold aqua">{{post.title}}</h5>
+              <a class="button forest-button toggle" href="{{post.permalink}}">
+                <span class="button-text">Read More</span><span class="caret">></span>
+              </a>
           </div>
         </div>
+        {% endfor %}
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="box box-8">
-          <div class="sub-box sub-box-3">
+        {% for post in site.posts limit:1 offset:2 %}
+        <div class="box box-8" style="background-image: url('{{post.image}}');">
+          <div class="sub-box sub-box-3 green-background" style="background-color: rgba(150, 188, 67, 0.9);">
+              <h5 class="bold lime">{{post.title}}</h5>
+            <a class="button green-button toggle" href="{{post.permalink}}">
+              <span class="button-text">Read More</span><span class="caret">></span>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="success-stories-container red-background">
+  <div class="inner">
+    <div class="content-margins">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h1 class="pink">
+            Success Stories
+          </h1>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="button red-button toggle" href="/success-stories">
+            <span class="button-text">Lorem ipsum</span><span class="caret">></span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="success-slider">
+            <a href="#" class="control_next3">></a>
+            <a href="#" class="control_prev3"><</a>
+            <ul>
+              <li>Slide 1</li>
+              <li>Slide 2</li>
+              <li>Slide 3</li>
+              <li>Slide 4</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -147,6 +231,7 @@ layout: default
   crossorigin="anonymous"></script>
 
 <script>
+// hero slider
 jQuery(document).ready(function ($) {
 
 $('#checkbox').change(function(){
@@ -184,14 +269,121 @@ $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
       });
   };
 
-  $('a.control_prev').click(function () {
+  $('a.control_prev').click(function (e) {
+      e.preventDefault();
       moveLeft();
   });
 
-  $('a.control_next').click(function () {
+  $('a.control_next').click(function (e) {
+      e.preventDefault();
       moveRight();
   });
 
 });
+
+
+
+// stats slider
+jQuery(document).ready(function ($) {
+
+// $('#checkbox').change(function(){
+//   setInterval(function () {
+//       moveRight();
+//   }, 3000);
+// });
+
+var slideCount = $('#stats-slider ul li').length;
+var slideWidth = $('#stats-slider ul li').width();
+var slideHeight = $('#stats-slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+$('#stats-slider').css({ width: slideWidth, height: slideHeight });
+
+$('#stats-slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+  $('#stats-slider ul li:last-child').prependTo('#stats-slider ul');
+
+  function moveLeft2() {
+      $('#stats-slider ul').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('#stats-slider ul li:last-child').prependTo('#stats-slider ul');
+          $('#stats-slider ul').css('left', '');
+      });
+  };
+
+  function moveRight2() {
+      $('#stats-slider ul').animate({
+          left: - slideWidth
+      }, 200, function () {
+          $('#stats-slider ul li:first-child').appendTo('#stats-slider ul');
+          $('#stats-slider ul').css('left', '');
+      });
+  };
+
+  $('a.control_prev2').click(function (e) {
+      e.preventDefault();
+      moveLeft2();
+  });
+
+  $('a.control_next2').click(function (e) {
+    e.preventDefault();
+      moveRight2();
+  });
+
+});
+
+
+
+// success stories slider
+jQuery(document).ready(function ($) {
+
+// $('#checkbox').change(function(){
+//   setInterval(function () {
+//       moveRight();
+//   }, 3000);
+// });
+
+var slideCount = $('#success-slider ul li').length;
+var slideWidth = $('#success-slider ul li').width();
+var slideHeight = $('#success-slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+$('#success-slider').css({ width: slideWidth, height: slideHeight });
+
+$('#success-slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+  $('#success-slider ul li:last-child').prependTo('#success-slider ul');
+
+  function moveLeft() {
+      $('#success-slider ul').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('#success-slider ul li:last-child').prependTo('#success-slider ul');
+          $('#success-slider ul').css('left', '');
+      });
+  };
+
+  function moveRight() {
+      $('#success-slider ul').animate({
+          left: - slideWidth
+      }, 200, function () {
+          $('#success-slider ul li:first-child').appendTo('#success-slider ul');
+          $('#success-slider ul').css('left', '');
+      });
+  };
+
+  $('a.control_prev3').click(function (e) {
+      e.preventDefault();
+      moveLeft();
+  });
+
+  $('a.control_next3').click(function (e) {
+      e.preventDefault();
+      moveRight();
+  });
+
+});
+
 
 </script>
