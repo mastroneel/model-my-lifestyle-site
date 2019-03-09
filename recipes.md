@@ -1,0 +1,4 @@
+---
+layout: recipes
+permalink: '/recipes'
+---

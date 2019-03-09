@@ -1,0 +1,20 @@
+.box-white-container {
+  .box-category {
+    h1 {
+      margin-bottom: 150px;
+    }
+    .button {
+
+    }
+  }
+
+}
+
+
+@media (max-width: 889px) {
+  .box-white-container {
+    .row {
+      width: 100vw;
+    }
+  }
+}

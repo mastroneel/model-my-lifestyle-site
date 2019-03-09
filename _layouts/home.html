@@ -143,51 +143,31 @@ layout: default
           <a class="button orange-button" href="/health-tips">
             <span class="button-text">Health & Tips</span><span class="caret">></span>
           </a>
-          <a class="button orange-button" href="/All articles">
+          <a class="button orange-button" href="/lifestyle">
             <span class="button-text">All articles</span><span class="caret">></span>
           </a>
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-6">
-        {% for post in site.posts limit:1 %}
-        <div class="box box-6" style="background-image: url('{{post.image}}');">
-          <div class="sub-box sub-box-1 red-background" style="background-color: rgba(226, 31, 38, 0.9);">
-                <h5 class="bold pink">{{post.title}}</h5>
-            <a class="button red-button toggle" href="{{post.permalink}}">
-              <span class="button-text">Read More</span><span class="caret">></span>
-            </a>
+
+        {% for post in site.categories.blog limit:3 %}
+        <div class="col-xs-12 col-sm-6">
+          <div class="box blog-box" style="background-image: url('{{post.image}}');">
+              <div class="sub-box {{ post.categories | join: ' ' }}">
+                <h5 class="bold">{{post.title}}</h5>
+                <a class="button toggle" href="{{post.permalink}}">
+                  <span class="button-text">Read More</span><span class="caret">></span>
+                </a>
+              </div>
           </div>
         </div>
         {% endfor %}
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        {% for post in site.posts limit:1 offset:1 %}
-        <div class="box box-7" style="background-image: url('{{post.image}}');">
-          <div class="sub-box sub-box-2 forest-background" style="background-color: rgba(0, 145, 113, 0.9);">
-            <h5 class="bold aqua">{{post.title}}</h5>
-              <a class="button forest-button toggle" href="{{post.permalink}}">
-                <span class="button-text">Read More</span><span class="caret">></span>
-              </a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        {% for post in site.posts limit:1 offset:2 %}
-        <div class="box box-8" style="background-image: url('{{post.image}}');">
-          <div class="sub-box sub-box-3 green-background" style="background-color: rgba(150, 188, 67, 0.9);">
-              <h5 class="bold lime">{{post.title}}</h5>
-            <a class="button green-button toggle" href="{{post.permalink}}">
-              <span class="button-text">Read More</span><span class="caret">></span>
-            </a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+
     </div>
   </div>
 </div>
+
+
 
 <div class="success-stories-container red-background">
   <div class="inner">
@@ -208,86 +188,35 @@ layout: default
         <a href="#" class="control_next3">></a>
         <a href="#" class="control_prev3"><</a>
         <ul>
+          {% for post in site.posts limit:3 %}
+          {% if post.path contains 'success-stories' %}
           <li>
             <div class="row">
-              <div class="col-xs-0 col-md-3 hide-sm">
-                <img src="/img/testimonials/kristine.png" alt="Kristine">
+              <div class="col-xs-0 col-md-4 hide-sm">
+                <!-- <div class="success-image-container" style="background-image: url('{{post.image}}');">
+
+                </div> -->
+                <img class="success-image" src="{{post.image}}"/>
               </div>
               <div class="col-xs-12 col-md-8 big-sm">
-                <div class="name-container">
-                  <h3 class="red">
-                    Kristine,
-                  </h3>
-                  <h6 class="red">
-                    -15lbs
-                  </h6>
+                <div class="text-container">
+                  <div class="name-container">
+                    <h3 class="red">
+                      {{post.title}}
+                    </h3>
+                    <h6 class="red">
+                      {{post.pounds}}
+                    </h6>
+                  </div>
+                  <h5 class="white">
+                    "{{post.quote}}"
+                  </h5>
                 </div>
-                <h5 class="white">
-                  "This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!"
-                </h5>
               </div>
             </div>
           </li>
-          <li>
-            <div class="row">
-              <div class="col-xs-0 col-md-3 hide-sm">
-                <img src="/img/testimonials/kristine.png" alt="Kristine">
-              </div>
-              <div class="col-xs-12 col-md-8 big-sm">
-                <div class="name-container">
-                  <h3 class="red">
-                    Kristy,
-                  </h3>
-                  <h6 class="red">
-                    -15lbs
-                  </h6>
-                </div>
-                <h5 class="white">
-                  "This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!"
-                </h5>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="row">
-              <div class="col-xs-0 col-md-3 hide-sm">
-                <img src="/img/testimonials/kristine.png" alt="Kristine">
-              </div>
-              <div class="col-xs-12 col-md-8 big-sm">
-                <div class="name-container">
-                  <h3 class="red">
-                    Krista,
-                  </h3>
-                  <h6 class="red">
-                    -15lbs
-                  </h6>
-                </div>
-                <h5 class="white">
-                  "This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!"
-                </h5>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="row">
-              <div class="col-xs-0 col-md-3 hide-sm">
-                <img src="/img/testimonials/kristine.png" alt="Kristine">
-              </div>
-              <div class="col-xs-12 col-md-8 big-sm">
-                <div class="name-container">
-                  <h3 class="red">
-                    Kristal,
-                  </h3>
-                  <h6 class="red">
-                    -15lbs
-                  </h6>
-                </div>
-                <h5 class="white">
-                  "This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!"
-                </h5>
-              </div>
-            </div>
-          </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
     <!-- </div> -->

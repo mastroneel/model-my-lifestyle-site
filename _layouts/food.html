@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="box-white-container lifestyle-hero">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-5 orange-background">
+          <h1 class="yellow">
+            Choose <br>the healthy <br> lifestyle
+          </h1>
+          <a class="button orange-button" href="/workouts">
+            <span class="button-text">Workouts</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button toggle" href="/food">
+            <span class="button-text">Food</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/inspiration">
+            <span class="button-text">Inspiration</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/health-tips">
+            <span class="button-text">Health & Tips</span><span class="caret">></span>
+          </a>
+          <a class="button orange-button" href="/lifestyle">
+            <span class="button-text">All articles</span><span class="caret">></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-category forest-background">
+          <h1 class="aqua">
+            Food
+          </h1>
+          <a class="button forest-button" href="/meal-plans">
+            <span class="button-text">Meal Plans</span><span class="caret">></span>
+          </a>
+          <a class="button forest-button" href="/recipes">
+            <span class="button-text">Recipes</span><span class="caret">></span>
+          </a>
+          <a class="button forest-button" href="/health-and-beauty">
+            <span class="button-text">Health & Beauty</span><span class="caret">></span>
+          </a>
+          <a class="button forest-button" href="/weight-loss-food">
+            <span class="button-text">Weight Loss</span><span class="caret">></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="box-white-container">
+  <div class="inner">
+    <div class="row">
+
+        {% for post in site.categories.food %}
+        <div class="col-xs-12 col-sm-6">
+          <div class="box blog-box" style="background-image: url('{{post.image}}');">
+              <div class="sub-box {{ post.categories | join: ' ' }}">
+                <h5 class="bold">{{post.title}}</h5>
+                <a class="button toggle" href="{{post.permalink}}">
+                  <span class="button-text">Read More</span><span class="caret">></span>
+                </a>
+              </div>
+          </div>
+        </div>
+        {% endfor %}
+
+    </div>
+  </div>
+</div>

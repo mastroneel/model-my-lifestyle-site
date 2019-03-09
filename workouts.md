@@ -1,0 +1,4 @@
+---
+layout: workouts
+permakink: '/workouts'
+---

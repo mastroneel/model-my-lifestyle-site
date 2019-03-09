@@ -1,0 +1,4 @@
+---
+layout: lifestyle
+permalink: "/lifestyle"
+---

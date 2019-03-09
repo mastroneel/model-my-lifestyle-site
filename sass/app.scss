@@ -31,6 +31,8 @@
 @import 'footer';
 @import 'slider';
 @import 'home';
+@import 'lifestyle';
+@import 'category-pages';
 
 // **************
 // general styles
@@ -197,7 +199,7 @@ a.menu {
 }
 
 // red button styles
-.red-button, .red-button:visited {
+.red-button, .red-button:visited, .workout .button {
   color: $red;
   .button-text {
     border-color: $dark-red;
@@ -226,10 +228,9 @@ a.menu {
 }
 
 // red button on red background styles
-.red-background {
-  background-color: $red;
+.red-background, .workout {
   // padding: 25px;
-  .red-button {
+  .red-button, .button {
     .button-text {
       color: $pink;
     }
@@ -250,9 +251,17 @@ a.menu {
   }
 }
 
+.red-background {
+  background-color: $red;
+}
+
+.workout {
+  background-color: rgba(226, 31, 38, 0.9);
+}
+
 
 // orange button styles
-.orange-button, .orange-button:visited {
+.orange-button, .orange-button:visited, .health-tips .button {
   color: $orange;
   .button-text {
     border-color: $dark-orange;
@@ -282,10 +291,10 @@ a.menu {
 }
 
 // orange button on orange background styles
-.orange-background {
+.orange-background, .health-tips {
   // padding: 25px;
   background: $orange;
-  .orange-button {
+  .orange-button, .button {
     .button-text {
       background-color: $orange;
       color: $yellow;
@@ -309,7 +318,7 @@ a.menu {
 
 
 // forest button styles
-.forest-button, .forest-button:visited {
+.forest-button, .forest-button:visited, .food .button {
   color: $forest;
   .button-text {
     border-color: $dark-forest;
@@ -339,10 +348,10 @@ a.menu {
 }
 
 // forest button on forest background styles
-.forest-background {
+.forest-background, .food {
   // padding: 25px;
   background: $forest;
-  .forest-button {
+  .forest-button, .button {
     .button-text {
       background-color: $forest;
       color: $aqua;
@@ -366,7 +375,7 @@ a.menu {
 
 
 // green button styles
-.green-button, .green-button:visited {
+.green-button, .green-button:visited, .inspiration .button {
   color: $green;
   .button-text {
     border-color: $dark-green;
@@ -396,10 +405,10 @@ a.menu {
 }
 
 // green button on green background styles
-.green-background {
+.green-background, .inspiration {
   // padding: 25px;
   background: $green;
-  .green-button {
+  .green-button, .button {
     .button-text {
       background-color: $green;
       color: $lime;

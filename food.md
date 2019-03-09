@@ -1,0 +1,4 @@
+---
+layout: food
+permakink: '/food'
+---

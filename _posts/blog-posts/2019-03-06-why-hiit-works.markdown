@@ -2,7 +2,7 @@
 layout: post
 title:  "Why High-Intensity Interval Training Works"
 date:   2019-03-06 08:49:27 +0800
-categories: health
+categories: blog workout muscle-gain
 permalink: "/why-hiit-works"
 image: /img/blog-img/benefits-of-hiit-training.jpg
 ---

@@ -1,0 +1,4 @@
+---
+layout: inspiration
+permakink: '/inspiration'
+---

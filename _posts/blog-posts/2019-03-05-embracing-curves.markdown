@@ -2,7 +2,7 @@
 layout: post
 title:  "Embracing Curves and Finding Your Healthy Weight"
 date:   2019-03-05 08:49:27 +0800
-categories: health
+categories: blog inspiration
 permalink: "/embracing-curves"
 image: /img/blog-img/scale.png
 ---
