@@ -27,15 +27,71 @@
       margin: 0;
       padding: 0;
       float: right;
-      margin-top: 35px; }
+      margin-top: -36px;
+      height: 100px;
+      line-height: 100px; }
       .nav .content-margins ul li {
         display: inline-flex;
-        color: #d4de24; }
+        width: 80px;
+        text-align: center;
+        color: #d4de24;
+        margin: 0 -4px !important;
+        line-height: 100px;
+        height: 65px;
+        padding-top: 35px;
+        padding-left: 30px;
+        padding-right: 30px; }
         .nav .content-margins ul li a, .nav .content-margins ul li a:visited {
+          margin: 0 auto !important;
+          padding: 0;
           color: #d4de24;
           font-size: 16px; }
         .nav .content-margins ul li.divider {
-          margin: 0 25px; }
+          position: relative;
+          z-index: 1;
+          padding: 35px 0 0 0;
+          width: 3px; }
+      .nav .content-margins ul .active a, .nav .content-margins ul .active a:visited {
+        font-family: 'Montserrat 700' !important; }
+      .nav .content-margins ul .home.active {
+        background-color: #009171; }
+        .nav .content-margins ul .home.active a, .nav .content-margins ul .home.active a:visited {
+          color: #4DBFA8; }
+      .nav .content-margins ul .lifestyle.active {
+        background-color: #F68C1E; }
+        .nav .content-margins ul .lifestyle.active a, .nav .content-margins ul .lifestyle.active a:visited {
+          color: #FFD400; }
+      .nav .content-margins ul .products.active {
+        background-color: #4F9843; }
+        .nav .content-margins ul .products.active a, .nav .content-margins ul .products.active a:visited {
+          color: #84C440; }
+      .nav .content-margins ul .our-company.active {
+        background-color: #E21E26; }
+        .nav .content-margins ul .our-company.active a, .nav .content-margins ul .our-company.active a:visited {
+          color: pink; }
+      .nav .content-margins ul .lifestyle, .nav .content-margins ul .home, .nav .content-margins ul .products, .nav .content-margins ul .our-company {
+        position: relative;
+        z-index: 100; }
+        .nav .content-margins ul .lifestyle:hover, .nav .content-margins ul .home:hover, .nav .content-margins ul .products:hover, .nav .content-margins ul .our-company:hover {
+          background-color: #fff; }
+          .nav .content-margins ul .lifestyle:hover a, .nav .content-margins ul .lifestyle:hover a:visited, .nav .content-margins ul .home:hover a, .nav .content-margins ul .home:hover a:visited, .nav .content-margins ul .products:hover a, .nav .content-margins ul .products:hover a:visited, .nav .content-margins ul .our-company:hover a, .nav .content-margins ul .our-company:hover a:visited {
+            font-family: 'Montserrat 700'; }
+      .nav .content-margins ul .lifestyle:hover a, .nav .content-margins ul .lifestyle:hover a:visited {
+        color: #F68C1E; }
+      .nav .content-margins ul .home:hover a, .nav .content-margins ul .home:hover a:visited {
+        color: #009171; }
+      .nav .content-margins ul .products:hover a, .nav .content-margins ul .products:hover a:visited {
+        color: #4F9843; }
+      .nav .content-margins ul .our-company {
+        width: 120px; }
+        .nav .content-margins ul .our-company:hover a, .nav .content-margins ul .our-company:hover a:visited {
+          color: #E21E26; }
+
+.submenu {
+  display: none; }
+
+.visible {
+  display: block; }
 
 footer {
   background-color: #009171;

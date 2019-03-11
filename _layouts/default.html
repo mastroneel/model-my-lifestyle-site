@@ -17,31 +17,258 @@
             </a>
           </div>
           <ul>
-            <li>
+
+
+            {% if page.active == "home" %}
+            <li class="home active">
               <a class="menu" href="/">Home</a>
             </li>
+            {% else %}
+            <li class="home">
+              <a class="menu" href="/">Home</a>
+            </li>
+            {% endif %}
+            {% unless page.active == "lifestyle" %}
+            {% unless page.active == "home" %}
             <li class="divider">
               |
             </li>
-            <li>
+            {% endunless %}
+            {% endunless %}
+            {% if page.active == "lifestyle" %}
+            <li class="lifestyle active">
               <a class="menu" href="/lifestyle">Lifestyle</a>
             </li>
+            {% else %}
+            <li class="lifestyle">
+              <a class="menu" href="/lifestyle">Lifestyle</a>
+            </li>
+            {% endif %}
+            {% unless page.active == "lifestyle" %}
+            {% unless page.active == "products" %}
             <li class="divider">
               |
             </li>
-            <li>
-              <a class="menu" href="#">Products</a>
+            {% endunless %}
+            {% endunless %}
+            {% if page.active == "products" %}
+            <li class="products active">
+              <a class="menu" href="/products">Products</a>
             </li>
+            {% else %}
+            <li class="products">
+              <a class="menu" href="/products">Products</a>
+            </li>
+            {% endif %}
+            {% unless page.active == "products" %}
+            {% unless page.active == "our-company" %}
             <li class="divider">
               |
             </li>
-            <li>
-              <a class="menu" href="#">Our Company</a>
+            {% endunless %}
+            {% endunless %}
+            {% if page.active == "our-company" %}
+            <li class="our-company active">
+              <a class="menu" href="/our-company">Our Company</a>
+            </li>
+            {% else %}
+            <li class="our-company">
+              <a class="menu" href="/our-company">Our Company</a>
+            </li>
+            {% endif %}
+          </ul>
+
+    </nav>
+
+
+
+    </div>
+    </div>
+
+
+    <div class="submenu lifestyle-submenu">
+      <div class="row">
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/workouts">
+                <span class="button-text">Workouts</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/weight-loss-exercise">
+                <span class="button-text">Weight Loss</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/muscle-gain">
+                <span class="button-text">Muscle Gain</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/food">
+                <span class="button-text">Food</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/meal-plans">
+                <span class="button-text">Meal Plans</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/recipes">
+                <span class="button-text">Recipes</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/health-and-beauty">
+                <span class="button-text">Health & Beauty</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/weight-loss-food">
+                <span class="button-text">Weight Loss</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/inspiration">
+                <span class="button-text">Inspiration</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/health-tips">
+                <span class="button-text">Health Tips</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="see-all-articles">
+            <li class="title-item">
+              <a href="/lifestyle">
+                <span class="button-text">See all articles</span><span class="caret">></span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+
+
+
+
+    <div class="submenu products-submenu">
+      <div class="row">
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/mml-simulator">
+                <span class="button-text">MML Simulator</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/calculators">
+                <span class="button-text">Calculators</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/perfect-body">
+                <span class="button-text">Perfect Body</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/body-mass-index">
+                <span class="button-text">Body Mass Index</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/calories-burned">
+                <span class="button-text">Calories Burned</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/counters">
+                <span class="button-text">Counters</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/calorie-counter">
+                <span class="button-text">Calorie Counter</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/nutrition-counter">
+                <span class="button-text">Nutrition Counter</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-3">
+          <ul>
+            <li class="title-item">
+              <a href="/reminders">
+                <span class="button-text">Reminders</span><span class="caret">></span>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="/water-drink-reminder">
+                <span class="button-text">Water Drink Reminder</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="see-all-articles">
+            <li class="title-item">
+              <a href="/products">
+                <span class="button-text">See all products</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="submenu our-company-submenu">
+      <div class="row">
+        <div class="col-xs-0 col-sm-6">
+          <ul>
+            <li class="title-item">
+              <a href="/about">
+                <span class="button-text">About</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-0 col-sm-6">
+          <ul>
+            <li class="title-item">
+              <a href="/contact">
+                <span class="button-text">Contact</span><span class="caret">></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
     <!-- <h1>
       {{ page.title }}
@@ -306,6 +533,62 @@
       </div>
 
     </footer>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+
+  $( "li.home" ).hover(function() {
+    $('.submenu').removeClass('visible');
+  });
+
+  $( "li.lifestyle" ).hover(function() {
+    $('.submenu').removeClass('visible');
+    $('.lifestyle-submenu').addClass('visible');
+  });
+
+  $( ".lifestyle-submenu" ).mouseenter(function() {
+    $( "li.lifestyle" ).addClass('active');
+  });
+
+  $( ".lifestyle-submenu" ).mouseleave(function() {
+    $( "li.lifestyle" ).removeClass('active');
+    $('.lifestyle-submenu').removeClass('visible');
+  });
+
+  $( "li.products" ).hover(function() {
+    $('.submenu').removeClass('visible');
+    $('.products-submenu').addClass('visible');
+  });
+
+  $( ".products-submenu" ).mouseenter(function() {
+    $( "li.products" ).addClass('active');
+  });
+
+  $( ".products-submenu" ).mouseleave(function() {
+    $( "li.products" ).removeClass('active');
+    $('.products-submenu').removeClass('visible');
+  });
+
+  $( "li.our-company" ).hover(function() {
+    $('.submenu').removeClass('visible');
+    $('.our-company-submenu').addClass('visible');
+  });
+
+  $( ".our-company-submenu" ).mouseenter(function() {
+    $( "li.our-company" ).addClass('active');
+  });
+
+  $( ".our-company-submenu" ).mouseleave(function() {
+    $( "li.our-company" ).removeClass('active');
+    $('.our-company-submenu').removeClass('visible');
+  });
+
+  </script>
 
   </body>
 </html>

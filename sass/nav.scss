@@ -23,18 +23,114 @@
       margin: 0;
       padding: 0;
       float: right;
-      margin-top: 35px;
+      margin-top: -36px;
+      height: 100px;
+      line-height: 100px;
       li {
         display: inline-flex;
+        width: 80px;
+        text-align: center;
         color: $lime;
+        margin: 0 -4px !important;
+        line-height: 100px;
+        height: 65px;
+        padding-top: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
         a, a:visited {
+          margin: 0 auto !important;
+          padding: 0;
           color: $lime;
           font-size: 16px;
+          // margin-left: 25px !important;
+          // margin-right: 25px !important;
         }
         &.divider {
-          margin: 0 25px;
+          position: relative;
+          z-index: 1;
+          padding: 35px 0 0 0;
+          // margin: 0;
+          width: 3px;
+        }
+      }
+      .active {
+        a, a:visited {
+          font-family: 'Montserrat 700' !important;
+        }
+      }
+      .home.active {
+        background-color: $forest;
+        a, a:visited {
+          color: $aqua;
+        }
+      }
+      .lifestyle.active {
+        background-color: $orange;
+        a, a:visited {
+          color: $yellow;
+        }
+      }
+      .products.active {
+        background-color: $dark-green;
+        a, a:visited {
+          color: $green;
+        }
+      }
+      .our-company.active {
+        background-color: $red;
+        a, a:visited {
+          color: pink;
+        }
+      }
+      .lifestyle, .home, .products, .our-company {
+        position: relative;
+        z-index: 100;
+        &:hover {
+          background-color: $white;
+          // transition: 0.2s;
+          a, a:visited {
+            font-family: 'Montserrat 700';
+          }
+        }
+      }
+      .lifestyle {
+        &:hover {
+          a, a:visited {
+            color: $orange;
+          }
+        }
+      }
+      .home {
+        &:hover {
+          a, a:visited {
+            color: $forest;
+          }
+        }
+      }
+      .products {
+        &:hover {
+          a, a:visited {
+            color: $dark-green;
+          }
+        }
+      }
+      .our-company {
+        width: 120px;
+        &:hover {
+          a, a:visited {
+            color: $red;
+          }
         }
       }
     }
   }
+}
+
+
+.submenu {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
