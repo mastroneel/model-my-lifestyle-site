@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Age Of Making Fasting A Dietary Requirement Has Arrived"
+author: jess1818
 date:   2018-01-08 08:49:27 +0800
 categories: blog health-tips
 permalink: "/fasting"

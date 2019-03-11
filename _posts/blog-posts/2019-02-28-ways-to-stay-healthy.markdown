@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Ways to Stay Fit and Healthy"
+author: jess1818
 date:   2019-02-28 08:49:27 +0800
 categories: blog health-tips
 permalink: "/ways-to-stay-fit-and-healthy"

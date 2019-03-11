@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Embracing Curves and Finding Your Healthy Weight"
+author: jess1818
 date:   2019-03-05 08:49:27 +0800
 categories: blog inspiration
 permalink: "/embracing-curves"

@@ -2,4 +2,141 @@
 layout: default
 ---
 
+<div class="blog-container">
+
+
+
+
+
+<div class="box-white-container post-hero">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-5 {{ page.categories | join: ' ' }}">
+          <h2>
+            {{page.title}}
+          </h2>
+          <p class="semi-bold">
+          Categories: {% for category in  page.categories %}
+          {% unless category contains 'blog' %}  {{category | replace: '-', ' '}}{% endunless %}{% unless category contains 'blog' %}{% unless forloop.last %},{% endunless %}{% endunless %}
+          {% endfor %}
+          </p>
+          <p>
+          Published by: {{ page.author }}
+          <br>
+          {{ page.date | date: "%B %-d, %Y"}}
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-0 col-sm-6">
+        <div class="box" style="background-image: url('{{page.image}}');">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="inner">
+  <div class="content-margins">
+
 {{ content }}
+
+
+  </div>
+
+<div class="page-divider"></div>
+
+{% for category in page.categories limit:1 offset:1 %}
+  {% assign moreThanOneInCategory = false %}
+  {% assign posts = site.categories[category] %}
+
+  {% for post in posts %}
+    {% if forloop.length > 1 %}
+      {% assign moreThanOneInCategory = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if moreThanOneInCategory == true %}
+    <div class="related-posts">
+      <h4 class="post {{ page.categories | join: ' ' }}">Related articles</h4>
+
+      <div class="row">
+        {% for post in posts limit:4 %}
+          {% unless post.url == page.url %}
+          {% unless post.categories contains "success" %}
+            <div class="col-xs-12 col-md-4">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="sub-box {{ page.categories | join: ' ' }}">
+                    <p class="bold {{ page.categories | join: ' ' }}">{{ post.title }}</p>
+                    <div class="caret {{ page.categories | join: ' ' }}">
+                      <a href="{{ post.url | prepend: site.baseurl }}">></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="post-preview-image" style="background-image: url('{{post.image}}');">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endunless %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+</div>
+
+<div class="share-like-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 orange-background">
+      <div class="inner">
+      <h4 class="yellow">Share this</h4>
+      <ul>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/google-plus.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/twitter.png" />
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 red-background">
+      <div class="inner">
+      <h4 class="pink">Like this</h4>
+      <a class="button red-button toggle" href="#">
+        <span class="button-text">Like</span><span class="caret center"><img src="/img/icons/like-button.png" /></span>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comment-section green-background">
+  <div class="inner">
+    <h4 class="lime">Leave a reply</h4>
+    <form method="post">
+      <textarea name="comment" rows="8" cols="80" placeholder="Enter your comment here ..."></textarea>
+      <a type="submit" name="submit" class="button green-button toggle" href="#">
+        <span class="button-text">Post comment</span><span class="caret">></span>
+      </a>
+    </form>
+  </div>
+</div>
+
+</div>

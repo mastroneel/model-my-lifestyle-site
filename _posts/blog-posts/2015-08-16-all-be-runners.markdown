@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "We Can’t All Be Runners, But We Can Certainly Try."
+author: qwertme
 date:   2015-08-16 08:49:27 +0800
 categories: blog workout weight-loss-exercise
 permalink: "/we-can-try"

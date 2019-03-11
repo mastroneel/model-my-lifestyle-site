@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Let Ashley Graham Show You with Her New Lingerie Collection"
+author: qwertme
 date:   2015-09-24 08:49:27 +0800
 categories: blog inspiration
 permalink: "/ashley-graham"

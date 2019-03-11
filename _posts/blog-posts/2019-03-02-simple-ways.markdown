@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "5 Simple Ways To Improve Your Diet"
+author: jess1818
 date:   2019-03-02 08:49:27 +0800
 categories: blog food weight-loss-food
 permalink: "/simple-ways"

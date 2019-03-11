@@ -929,6 +929,371 @@ footer {
 @media (max-width: 889px) {
   .box-white-container .row {
     width: 100vw; } }
+.blog-container {
+  width: 100vw;
+  overflow: hidden; }
+
+.post-hero {
+  padding: 0;
+  width: 100vw;
+  background-image: url("/img/backgrounds/post-bg.png");
+  background-size: 2400px 600px;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .post-hero .col-xs-12, .post-hero .col-sm-6 {
+    margin: 0;
+    padding: 0; }
+  .post-hero .box {
+    width: 100%; }
+    .post-hero .box h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 55px;
+      line-height: 1;
+      padding: 50px;
+      margin-bottom: 70px; }
+    .post-hero .box p {
+      font-size: 16px;
+      padding: 0 50px;
+      line-height: 1.5; }
+  .post-hero .box.workout {
+    background-color: #E21E26; }
+    .post-hero .box.workout h2, .post-hero .box.workout p {
+      color: #F38082; }
+  .post-hero .box.health-tips {
+    background-color: #F68C1E; }
+    .post-hero .box.health-tips h2, .post-hero .box.health-tips p {
+      color: #FFD400; }
+  .post-hero .box.food {
+    background-color: #009171; }
+    .post-hero .box.food h2, .post-hero .box.food p {
+      color: #4DBFA8; }
+  .post-hero .box.inspiration {
+    background-color: #84C440; }
+    .post-hero .box.inspiration h2, .post-hero .box.inspiration p {
+      color: #d4de24; }
+
+h4.post {
+  background-color: #fff !important;
+  font-size: 45px; }
+
+h4.food {
+  color: #009171; }
+
+h4.workout {
+  color: #E21E26; }
+
+h4.inspiration {
+  color: #84C440; }
+
+h4.health-tips {
+  color: #F68C1E; }
+
+.page-divider {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #000;
+  margin: 0 auto; }
+
+@media (max-width: 1300px) {
+  .page-divider {
+    width: 90%; } }
+.related-posts {
+  margin-bottom: 100px; }
+  .related-posts .row {
+    height: 200px; }
+    .related-posts .row .col-xs-12, .related-posts .row .col-sm-4, .related-posts .row .col-xs-6 {
+      padding: 0;
+      margin: 0; }
+    .related-posts .row .sub-box {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+    .related-posts .row .post-preview-image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center; }
+  .related-posts p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    padding: 15px 15px 0 15px;
+    font-size: 20px; }
+  .related-posts p.food {
+    color: #4DBFA8; }
+  .related-posts p.inspiration {
+    color: #d4de24; }
+  .related-posts p.health-tips {
+    color: #FFD400; }
+  .related-posts p.workout {
+    color: #F38082; }
+  .related-posts .caret {
+    text-align: center;
+    height: 35px;
+    width: 45px;
+    font-size: 1.8em;
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px; }
+    .related-posts .caret a {
+      font-size: 1.5em; }
+  .related-posts .caret.food {
+    background: #007257;
+    padding-top: 10px; }
+    .related-posts .caret.food a, .related-posts .caret.food a:visited {
+      color: #009171; }
+  .related-posts .caret.inspiration {
+    background: #4F9843;
+    padding-top: 10px; }
+    .related-posts .caret.inspiration a, .related-posts .caret.inspiration a:visited {
+      color: #84C440; }
+  .related-posts .caret.health-tips {
+    background: #F16321;
+    padding-top: 10px; }
+    .related-posts .caret.health-tips a, .related-posts .caret.health-tips a:visited {
+      color: #F68C1E; }
+  .related-posts .caret.workout {
+    background: #A51E22;
+    padding-top: 10px; }
+    .related-posts .caret.workout a, .related-posts .caret.workout a:visited {
+      color: #E21E26; }
+
+.share-like-section .orange-background, .share-like-section .red-background {
+  padding: 10px 0 0 0; }
+  .share-like-section .orange-background .inner, .share-like-section .red-background .inner {
+    max-width: 600px; }
+.share-like-section h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 35px; }
+.share-like-section .orange-background .inner {
+  float: right; }
+.share-like-section .orange-background h4 {
+  float: left; }
+.share-like-section .orange-background ul {
+  text-align: right;
+  list-style-type: none;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 25px; }
+  .share-like-section .orange-background ul li {
+    display: inline-flex;
+    margin: 0 10px; }
+    .share-like-section .orange-background ul li a img {
+      height: 30px;
+      width: auto; }
+.share-like-section .red-background .inner {
+  float: left; }
+.share-like-section .red-background h4 {
+  float: left;
+  margin-left: 25px; }
+.share-like-section .red-background .button {
+  float: right;
+  margin-top: 5px; }
+
+.comment-section {
+  padding: 15px 0 125px 0; }
+  .comment-section h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 35px; }
+  .comment-section form {
+    margin: 0 auto; }
+    .comment-section form textarea {
+      width: 100%;
+      color: #84C440;
+      font-family: 'Montserrat 400';
+      border: none;
+      padding-top: 15px;
+      font-size: 20px;
+      margin-top: 10px; }
+    .comment-section form .button {
+      float: right;
+      margin-top: 10px; }
+    .comment-section form ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #84C440 !important; }
+    .comment-section form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #84C440 !important; }
+    .comment-section form :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #84C440 !important; }
+    .comment-section form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #84C440 !important; }
+
+@media (max-width: 1250px) {
+  .share-like-section .orange-background .inner, .share-like-section .red-background .inner {
+    width: 100%; }
+  .share-like-section h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px; }
+  .share-like-section .orange-background h4 {
+    margin-left: 25px; }
+  .share-like-section .red-background .button {
+    width: 200px;
+    margin-right: 25px; }
+    .share-like-section .red-background .button .button-text {
+      width: 123px; }
+
+  .comment-section h4 {
+    margin-left: 25px; }
+  .comment-section form {
+    margin: 0 25px; } }
+@media (max-width: 1200px) {
+  .post-hero .box h2 {
+    font-size: 52px;
+    padding: 50px;
+    margin-bottom: 40px; }
+
+  .related-posts .row .sub-box p {
+    font-size: 18px; } }
+@media (max-width: 1100px) {
+  .post-hero .box h2 {
+    font-size: 48px;
+    padding: 25px;
+    margin-bottom: 30px; }
+  .post-hero .box p {
+    padding-left: 25px; } }
+@media (max-width: 1023px) {
+  .related-posts .row {
+    height: auto; }
+    .related-posts .row .sub-box, .related-posts .row .post-preview-image {
+      min-height: 200px;
+      margin-top: 25px; }
+      .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
+        font-size: 30px; }
+      .related-posts .row .sub-box .caret, .related-posts .row .post-preview-image .caret {
+        bottom: 25px; } }
+@media (max-width: 955px) {
+  .post-hero .box h2 {
+    font-size: 45px;
+    margin-bottom: 20px; } }
+@media (max-width: 875px) {
+  .post-hero .box h2 {
+    font-size: 40px;
+    margin-bottom: 20px; } }
+@media (max-width: 800px) {
+  .post-hero .box h2 {
+    font-size: 35px;
+    margin-bottom: 15px; }
+
+  .share-like-section h4 {
+    font-size: 25px; }
+  .share-like-section .orange-background h4 {
+    margin-left: 15px; }
+  .share-like-section .red-background .button {
+    width: 200px;
+    margin-right: 15px; }
+    .share-like-section .red-background .button .button-text {
+      width: 123px; } }
+@media (max-width: 767px) {
+  .post-hero .col-xs-0 {
+    display: none; }
+  .post-hero .box {
+    height: 50vw;
+    min-height: 400px; }
+    .post-hero .box h2 {
+      font-size: 50px;
+      margin-bottom: 15px; }
+
+  .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
+    font-size: 25px; }
+
+  .share-like-section .orange-background .inner, .share-like-section .red-background .inner {
+    max-width: 100vw;
+    width: 100vw; }
+  .share-like-section h4 {
+    font-size: 25px; }
+  .share-like-section .orange-background h4 {
+    margin-left: 15px; }
+  .share-like-section .orange-background ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px; }
+  .share-like-section .red-background h4 {
+    margin-left: 15px; }
+  .share-like-section .red-background .button {
+    width: 200px;
+    margin-right: 15px; }
+    .share-like-section .red-background .button .button-text {
+      width: 123px; } }
+@media (max-width: 660px) {
+  .post-hero .box h2 {
+    font-size: 45px;
+    margin-bottom: 15px; }
+  .post-hero .box p {
+    font-size: 14px; } }
+@media (max-width: 555px) {
+  .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
+    font-size: 22px; } }
+@media (max-width: 455px) {
+  .post-hero .box h2 {
+    font-size: 40px;
+    margin-bottom: 15px; }
+  .post-hero .box p {
+    font-size: 14px; }
+
+  .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
+    font-size: 18px; } }
+@media (max-width: 414px) {
+  .post-hero .box h2 {
+    font-size: 35px;
+    margin-bottom: 15px; }
+  .post-hero .box p {
+    font-size: 14px; } }
+@media (max-width: 350px) {
+  .post-hero .box h2 {
+    font-size: 32px;
+    margin-bottom: 15px; }
+  .post-hero .box p {
+    font-size: 14px; }
+
+  .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
+    font-size: 14px; }
+
+  .share-like-section .orange-background .inner, .share-like-section .red-background .inner {
+    max-width: 100vw;
+    width: 100vw; }
+  .share-like-section h4 {
+    font-size: 25px;
+    float: none; }
+  .share-like-section .orange-background {
+    text-align: center; }
+    .share-like-section .orange-background h4 {
+      margin-left: 15px;
+      float: none; }
+    .share-like-section .orange-background ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      float: none;
+      text-align: center; }
+  .share-like-section .red-background {
+    text-align: center;
+    padding-bottom: 25px; }
+    .share-like-section .red-background h4 {
+      margin-left: 15px;
+      float: none; }
+    .share-like-section .red-background .button {
+      width: 200px;
+      margin: 0 auto;
+      float: none;
+      text-align: left; }
+      .share-like-section .red-background .button .button-text {
+        width: 123px; }
+
+  .comment-section form {
+    margin: 0 15px; }
+    .comment-section form .button {
+      display: block;
+      margin: 10px auto !important; } }
 html {
   font-family: 'Montserrat 400', Arial, sans-serif; }
 
@@ -1003,6 +1368,9 @@ a.menu {
 
 .bold {
   font-family: 'Montserrat 800'; }
+
+.semi-bold {
+  font-family: 'Montserrat 700'; }
 
 .center {
   text-align: center; }

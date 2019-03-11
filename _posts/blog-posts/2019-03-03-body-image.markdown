@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Relationship Between Body Image and Disordered Eating"
+author: qwertme
 date:   2019-03-03 08:49:27 +0800
 categories: blog health-tips
 permalink: "/body-image"

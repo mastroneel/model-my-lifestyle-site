@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Losing Weight While Enjoying Your Favourite Summer Foods"
+author: jess1818
 date:   2019-03-01 08:49:27 +0800
 categories: blog food weight-loss-food
 permalink: "/summer-foods"

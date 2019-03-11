@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Buzzfeed Video That is Challengeing Fat Stereotypes"
+author: qwertme
 date:   2015-09-29 08:49:27 +0800
 categories: blog inspiration
 permalink: "/fat-but-not"

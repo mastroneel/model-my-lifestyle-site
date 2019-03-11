@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Back to School Meal Prepping Done Right"
+author: jess1818
 date:   2017-09-28 08:49:27 +0800
 categories: blog food meal-plans
 permalink: "/back-to-school"

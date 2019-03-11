@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "3 New Fitness Health Trends to Try Now and 2 to Avoid"
+author: jess1818
 date:   2019-03-07 08:49:27 +0800
 categories: blog food health-and-beauty
 permalink: "/health-trends"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "All Things Detox — The Facts & Myths You Should Know"
+author: jess1818
 date:   2019-03-04 08:49:27 +0800
 categories: blog food health-and-beauty
 permalink: "/all-things-detox"
