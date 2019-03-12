@@ -1,3 +1,223 @@
+.accordion-menu {
+  width: 100vw;
+  height: auto;
+  min-height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 10000;
+  background-color: #84C440;
+  overflow: hidden;
+  display: none; }
+
+.patty {
+  width: 45px;
+  background: #d4de24;
+  height: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 24px;
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+
+.patty:before {
+  content: "";
+  width: 45px;
+  background: #d4de24;
+  height: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: right;
+  margin-top: 15px;
+  display: block;
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+
+.patty:after {
+  content: "";
+  width: 45px;
+  background: #d4de24;
+  height: 4px;
+  float: right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 12px;
+  display: block;
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+
+.patty.active {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Opera, Chrome, and Safari */
+  margin-top: 40px; }
+
+.patty.active:before {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Opera, Chrome, and Safari */
+  margin-top: 0px; }
+
+.patty.active:after {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Opera, Chrome, and Safari */
+  margin-top: -4px; }
+
+.accordion {
+  font-size: 1rem;
+  width: 100vw;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #84C440; }
+  .accordion .button {
+    margin: 0;
+    font-family: 'Montserrat 700';
+    width: 100vw; }
+    .accordion .button .button-text {
+      width: 80vw;
+      border-right: none;
+      border-left: none;
+      padding-left: 10vw; }
+    .accordion .button .caret {
+      font-size: 40px;
+      width: 10vw;
+      border-right: none;
+      border-left: none; }
+  .accordion .mobile-accordion-ul {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0; }
+    .accordion .mobile-accordion-ul .sub-item a {
+      padding-left: 5vw;
+      font-family: 'Montserrat 400'; }
+    .accordion .mobile-accordion-ul .submenu-button {
+      margin: 0;
+      font-family: 'Montserrat 700';
+      width: 100vw; }
+      .accordion .mobile-accordion-ul .submenu-button .button-text {
+        width: 80vw;
+        border-right: none !important;
+        border-left: none !important;
+        padding-left: 10vw;
+        font-size: 20px; }
+      .accordion .mobile-accordion-ul .submenu-button .caret {
+        font-size: 40px;
+        margin-top: -0px;
+        width: 10vw;
+        border-right: none !important;
+        border-left: none !important; }
+    .accordion .mobile-accordion-ul .sub-item .submenu-button {
+      width: 95vw; }
+      .accordion .mobile-accordion-ul .sub-item .submenu-button .button-text {
+        width: 80vw;
+        border-right: none !important;
+        border-left: none !important;
+        margin-left: -5vw;
+        padding-left: 15vw;
+        width: 75vw; }
+  .accordion .accordion__item.js-accordion-item.active .products-menu-button .button-text {
+    color: #d4de24;
+    background-color: #4F9843;
+    border-color: #4F9843;
+    background: #4F9843; }
+  .accordion .accordion__item.js-accordion-item.active .products-menu-button .caret {
+    color: #84C440;
+    background-color: #4F9843;
+    border-color: #4F9843; }
+  .accordion .accordion__item.js-accordion-item.active .lifestyle-menu-button .button-text {
+    color: #FFD400;
+    background-color: #F68C1E;
+    border-color: #F68C1E;
+    background: #F68C1E; }
+  .accordion .accordion__item.js-accordion-item.active .lifestyle-menu-button .caret {
+    color: #F68C1E;
+    background-color: #F16321;
+    border-color: #F16321; }
+  .accordion .home-button-active .button-text {
+    color: #4DBFA8 !important;
+    background-color: #009171 !important;
+    border-color: #009171 !important;
+    background: #009171 !important; }
+  .accordion .home-button-active .caret {
+    color: #009171 !important;
+    background-color: #007257 !important;
+    border-color: #007257 !important; }
+  .accordion .our-company-active .button-text {
+    color: #F38082 !important;
+    background-color: #E21E26 !important;
+    border-color: #E21E26 !important;
+    background: #E21E26 !important; }
+  .accordion .our-company-active .caret {
+    color: #E21E26 !important;
+    background-color: #A51E22 !important;
+    border-color: #A51E22 !important; }
+  .accordion ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+
+@media (max-width: 500px) {
+  .accordion .button {
+    margin: 0;
+    font-family: 'Montserrat 700'; }
+    .accordion .button .button-text {
+      width: 70vw;
+      padding-left: 10vw; }
+    .accordion .button .caret {
+      width: 20vw; }
+  .accordion .mobile-accordion-ul .submenu-button .button-text {
+    width: 70vw;
+    padding-left: 10vw; }
+  .accordion .mobile-accordion-ul .submenu-button .caret {
+    font-size: 40px;
+    width: 20vw; }
+  .accordion .mobile-accordion-ul .sub-item .submenu-button {
+    width: 95vw; }
+    .accordion .mobile-accordion-ul .sub-item .submenu-button .button-text {
+      border-right: none !important;
+      border-left: none !important;
+      margin-left: -5vw;
+      padding-left: 15vw;
+      width: 65vw; } }
+.accordion-header,
+.accordion-body {
+  background: white; }
+
+.accordion-header {
+  transition: all .3s; }
+
+.accordion-header:hover {
+  position: relative;
+  z-index: 5; }
+
+.accordion-body {
+  background: #fff;
+  display: none; }
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none; }
+
 .nav {
   height: 100px;
   background: #84C440;
@@ -10,7 +230,7 @@
       float: left; }
       .nav .content-margins .logo a img {
         width: 350px; }
-    .nav .content-margins ul {
+    .nav .content-margins .desktop-links {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -18,7 +238,7 @@
       margin-top: -36px;
       height: 100px;
       line-height: 100px; }
-      .nav .content-margins ul li {
+      .nav .content-margins .desktop-links li {
         display: inline-flex;
         width: 80px;
         text-align: center;
@@ -29,56 +249,304 @@
         padding-top: 35px;
         padding-left: 30px;
         padding-right: 30px; }
-        .nav .content-margins ul li a, .nav .content-margins ul li a:visited {
+        .nav .content-margins .desktop-links li a, .nav .content-margins .desktop-links li a:visited {
           margin: 0 auto !important;
           padding: 0;
           color: #d4de24;
           font-size: 16px; }
-        .nav .content-margins ul li.divider {
+        .nav .content-margins .desktop-links li.divider {
           position: relative;
           z-index: 1;
           padding: 35px 0 0 0;
           width: 3px; }
-      .nav .content-margins ul .active a, .nav .content-margins ul .active a:visited {
+      .nav .content-margins .desktop-links .active a, .nav .content-margins .desktop-links .active a:visited {
         font-family: 'Montserrat 700' !important; }
-      .nav .content-margins ul .home.active {
+      .nav .content-margins .desktop-links .home.active {
         background-color: #009171; }
-        .nav .content-margins ul .home.active a, .nav .content-margins ul .home.active a:visited {
+        .nav .content-margins .desktop-links .home.active a, .nav .content-margins .desktop-links .home.active a:visited {
           color: #4DBFA8; }
-      .nav .content-margins ul .lifestyle.active {
+      .nav .content-margins .desktop-links .lifestyle.active {
         background-color: #F68C1E; }
-        .nav .content-margins ul .lifestyle.active a, .nav .content-margins ul .lifestyle.active a:visited {
+        .nav .content-margins .desktop-links .lifestyle.active a, .nav .content-margins .desktop-links .lifestyle.active a:visited {
           color: #FFD400; }
-      .nav .content-margins ul .products.active {
+      .nav .content-margins .desktop-links .products.active {
         background-color: #4F9843; }
-        .nav .content-margins ul .products.active a, .nav .content-margins ul .products.active a:visited {
+        .nav .content-margins .desktop-links .products.active a, .nav .content-margins .desktop-links .products.active a:visited {
           color: #84C440; }
-      .nav .content-margins ul .our-company.active {
+      .nav .content-margins .desktop-links .our-company.active {
         background-color: #E21E26; }
-        .nav .content-margins ul .our-company.active a, .nav .content-margins ul .our-company.active a:visited {
+        .nav .content-margins .desktop-links .our-company.active a, .nav .content-margins .desktop-links .our-company.active a:visited {
           color: pink; }
-      .nav .content-margins ul .lifestyle, .nav .content-margins ul .home, .nav .content-margins ul .products, .nav .content-margins ul .our-company {
+      .nav .content-margins .desktop-links .lifestyle, .nav .content-margins .desktop-links .home, .nav .content-margins .desktop-links .products, .nav .content-margins .desktop-links .our-company {
         position: relative;
         z-index: 100; }
-        .nav .content-margins ul .lifestyle:hover, .nav .content-margins ul .home:hover, .nav .content-margins ul .products:hover, .nav .content-margins ul .our-company:hover {
+        .nav .content-margins .desktop-links .lifestyle:hover, .nav .content-margins .desktop-links .home:hover, .nav .content-margins .desktop-links .products:hover, .nav .content-margins .desktop-links .our-company:hover {
           background-color: #fff; }
-          .nav .content-margins ul .lifestyle:hover a, .nav .content-margins ul .lifestyle:hover a:visited, .nav .content-margins ul .home:hover a, .nav .content-margins ul .home:hover a:visited, .nav .content-margins ul .products:hover a, .nav .content-margins ul .products:hover a:visited, .nav .content-margins ul .our-company:hover a, .nav .content-margins ul .our-company:hover a:visited {
+          .nav .content-margins .desktop-links .lifestyle:hover a, .nav .content-margins .desktop-links .lifestyle:hover a:visited, .nav .content-margins .desktop-links .home:hover a, .nav .content-margins .desktop-links .home:hover a:visited, .nav .content-margins .desktop-links .products:hover a, .nav .content-margins .desktop-links .products:hover a:visited, .nav .content-margins .desktop-links .our-company:hover a, .nav .content-margins .desktop-links .our-company:hover a:visited {
             font-family: 'Montserrat 700'; }
-      .nav .content-margins ul .lifestyle:hover a, .nav .content-margins ul .lifestyle:hover a:visited {
+      .nav .content-margins .desktop-links .lifestyle:hover a, .nav .content-margins .desktop-links .lifestyle:hover a:visited {
         color: #F68C1E; }
-      .nav .content-margins ul .home:hover a, .nav .content-margins ul .home:hover a:visited {
+      .nav .content-margins .desktop-links .home:hover a, .nav .content-margins .desktop-links .home:hover a:visited {
         color: #009171; }
-      .nav .content-margins ul .products:hover a, .nav .content-margins ul .products:hover a:visited {
+      .nav .content-margins .desktop-links .products:hover a, .nav .content-margins .desktop-links .products:hover a:visited {
         color: #4F9843; }
-      .nav .content-margins ul .our-company {
+      .nav .content-margins .desktop-links .our-company {
         width: 120px; }
-        .nav .content-margins ul .our-company:hover a, .nav .content-margins ul .our-company:hover a:visited {
+        .nav .content-margins .desktop-links .our-company:hover a, .nav .content-margins .desktop-links .our-company:hover a:visited {
           color: #E21E26; }
 
 .submenu {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 10000;
+  width: 100vw; }
+
+.lifestyle-submenu {
+  height: auto !important; }
+
+.products-submenu {
+  height: auto !important; }
+  .products-submenu ul li a, .products-submenu ul li a:visited {
+    color: #84C440; }
+
+.our-company-submenu {
+  top: 100px;
+  width: 600px; }
+  .our-company-submenu ul li a, .our-company-submenu ul li a:visited {
+    color: #E21E26; }
+
+.submenu {
+  background-color: #fff;
+  padding-top: 25px; }
+  .submenu .col-xs-0, .submenu .col-sm-3 {
+    padding: 0; }
+  .submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .submenu ul .title-item a {
+      font-family: 'Montserrat 700'; }
+    .submenu ul .sub-item a {
+      font-family: 'Montserrat 400';
+      padding-left: 10%; }
 
 .visible {
   display: block; }
+
+.visible-2 {
+  visibility: visible !important;
+  transition: 0.2s; }
+
+.submenu-button {
+  width: 300px;
+  display: block;
+  line-height: 45px;
+  transition: 0.2s;
+  margin: 0; }
+  .submenu-button .button-text {
+    font-size: 20px;
+    display: inline-block;
+    width: 224px;
+    padding-left: 25px;
+    height: 45px;
+    border: 3px solid;
+    border-right: none;
+    transition: 0.2s; }
+  .submenu-button .caret {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    font-size: 1.8em;
+    border: 3px solid;
+    border-left: none; }
+  .submenu-button .hidden-caret {
+    visibility: hidden; }
+
+.submenu-orange-button, .submenu-orange-button:visited {
+  color: #F68C1E; }
+  .submenu-orange-button .button-text, .submenu-orange-button:visited .button-text {
+    border-color: #fff; }
+  .submenu-orange-button .caret, .submenu-orange-button:visited .caret {
+    background-color: #F16321;
+    border-color: #F16321;
+    font-family: 'Montserrat 700'; }
+  .submenu-orange-button.toggle, .submenu-orange-button:visited.toggle {
+    border: none; }
+    .submenu-orange-button.toggle .button-text, .submenu-orange-button:visited.toggle .button-text {
+      font-family: 'Montserrat 700';
+      color: #FFD400;
+      background-color: #F68C1E;
+      border-color: #F68C1E;
+      background: #F68C1E;
+      margin-left: 0; }
+  .submenu-orange-button:hover, .submenu-orange-button:visited:hover {
+    margin: 0; }
+    .submenu-orange-button:hover .button-text, .submenu-orange-button:visited:hover .button-text {
+      color: #fff;
+      font-family: 'Montserrat 700';
+      border-color: #F16321;
+      background-color: #F16321;
+      transition: 0s; }
+
+.submenu-red-button, .submenu-red-button:visited {
+  color: #E21E26; }
+  .submenu-red-button .button-text, .submenu-red-button:visited .button-text {
+    border-color: #fff; }
+  .submenu-red-button .caret, .submenu-red-button:visited .caret {
+    background-color: #A51E22;
+    border-color: #A51E22;
+    font-family: 'Montserrat 700'; }
+  .submenu-red-button.toggle, .submenu-red-button:visited.toggle {
+    border: none; }
+    .submenu-red-button.toggle .button-text, .submenu-red-button:visited.toggle .button-text {
+      font-family: 'Montserrat 700';
+      color: #F38082;
+      background-color: #E21E26;
+      border-color: #E21E26;
+      background: #E21E26;
+      margin-left: 0; }
+  .submenu-red-button:hover, .submenu-red-button:visited:hover {
+    margin: 0; }
+    .submenu-red-button:hover .button-text, .submenu-red-button:visited:hover .button-text {
+      color: #fff;
+      font-family: 'Montserrat 700';
+      border-color: #A51E22;
+      background-color: #A51E22;
+      transition: 0s; }
+
+.submenu-green-button, .submenu-green-button:visited {
+  color: #84C440; }
+  .submenu-green-button .button-text, .submenu-green-button:visited .button-text {
+    border-color: #fff; }
+  .submenu-green-button .caret, .submenu-green-button:visited .caret {
+    background-color: #4F9843;
+    border-color: #4F9843;
+    font-family: 'Montserrat 700'; }
+  .submenu-green-button.toggle, .submenu-green-button:visited.toggle {
+    border: none; }
+    .submenu-green-button.toggle .button-text, .submenu-green-button:visited.toggle .button-text {
+      font-family: 'Montserrat 700';
+      color: #d4de24;
+      background-color: #84C440;
+      border-color: #84C440;
+      background: #84C440;
+      margin-left: 0; }
+  .submenu-green-button:hover, .submenu-green-button:visited:hover {
+    margin: 0; }
+    .submenu-green-button:hover .button-text, .submenu-green-button:visited:hover .button-text {
+      color: #fff;
+      font-family: 'Montserrat 700';
+      border-color: #4F9843;
+      background-color: #4F9843;
+      transition: 0s; }
+
+@media (max-width: 1200px) {
+  .submenu-button {
+    width: 240px; }
+    .submenu-button .button-text {
+      width: 174px;
+      font-size: 18px;
+      padding-left: 15px; }
+    .submenu-button .caret {
+      width: 45px; }
+
+  .submenu-orange-button:hover, .submenu-orange-button:visited:hover,
+  .submenu-green-button:hover, .submenu-green-button:visited:hover,
+  .submenu-red-button:hover, .submenu-red-button:visited:hover {
+    width: 240px; }
+    .submenu-orange-button:hover .button-text, .submenu-orange-button:visited:hover .button-text,
+    .submenu-green-button:hover .button-text, .submenu-green-button:visited:hover .button-text,
+    .submenu-red-button:hover .button-text, .submenu-red-button:visited:hover .button-text {
+      width: 174px;
+      font-size: 18px;
+      padding-left: 15px; }
+    .submenu-orange-button:hover .caret, .submenu-orange-button:visited:hover .caret,
+    .submenu-green-button:hover .caret, .submenu-green-button:visited:hover .caret,
+    .submenu-red-button:hover .caret, .submenu-red-button:visited:hover .caret {
+      width: 45px; } }
+@media (max-width: 995px) {
+  .nav .content-margins .logo a img {
+    width: 250px;
+    margin-top: 15px; }
+  .nav .content-margins .desktop-links {
+    margin-top: -37px; }
+    .nav .content-margins .desktop-links li {
+      width: 60px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .nav .content-margins .desktop-links li a, .nav .content-margins .desktop-links li a:visited {
+        margin: 0 auto !important;
+        padding: 0;
+        color: #d4de24;
+        font-size: 14px; }
+      .nav .content-margins .desktop-links li.divider {
+        position: relative;
+        z-index: 1;
+        padding: 35px 0 0 0;
+        width: 3px; } }
+@media (max-width: 991px) {
+  .submenu-button {
+    width: 190px; }
+    .submenu-button .button-text {
+      width: 129px;
+      font-size: 12px;
+      padding-left: 10px; }
+    .submenu-button .caret {
+      width: 45px;
+      margin-top: 1px; }
+
+  .submenu-orange-button:hover, .submenu-orange-button:visited:hover,
+  .submenu-green-button:hover, .submenu-green-button:visited:hover,
+  .submenu-red-button:hover, .submenu-red-button:visited:hover {
+    width: 190px; }
+    .submenu-orange-button:hover .button-text, .submenu-orange-button:visited:hover .button-text,
+    .submenu-green-button:hover .button-text, .submenu-green-button:visited:hover .button-text,
+    .submenu-red-button:hover .button-text, .submenu-red-button:visited:hover .button-text {
+      width: 129px;
+      font-size: 12px;
+      padding-left: 10px; }
+    .submenu-orange-button:hover .caret, .submenu-orange-button:visited:hover .caret,
+    .submenu-green-button:hover .caret, .submenu-green-button:visited:hover .caret,
+    .submenu-red-button:hover .caret, .submenu-red-button:visited:hover .caret {
+      width: 45px;
+      margin-top: 1px; } }
+@media (max-width: 875px) {
+  .nav .content-margins .desktop-links {
+    margin-right: -25px; }
+    .nav .content-margins .desktop-links li {
+      width: 50px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .nav .content-margins .desktop-links li a, .nav .content-margins .desktop-links li a:visited {
+        margin: 0 auto !important;
+        padding: 0;
+        color: #d4de24;
+        font-size: 12px; }
+      .nav .content-margins .desktop-links li.divider {
+        position: relative;
+        z-index: 1;
+        padding: 35px 0 0 0;
+        width: 3px; }
+    .nav .content-margins .desktop-links .our-company {
+      width: 90px; } }
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none; } }
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none; }
+
+  .nav-mobile {
+    position: fixed;
+    z-index: 10000; } }
+@media (max-width: 380px) {
+  .nav .content-margins .logo a img {
+    margin-left: -20px;
+    width: 200px;
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=nav.css.map */

@@ -70,6 +70,12 @@ body {
   margin: 0 25px;
 }
 
+@media (max-width: 767px) {
+  .page-section {
+    padding-top: 100px;
+  }
+}
+
 h1 {
   font-size: 98px;
   line-height: 117px;
@@ -163,6 +169,10 @@ a.menu {
   color: $aqua;
 }
 
+.forest {
+  color: $forest;
+}
+
 .lime {
   color: $lime;
 }
@@ -202,6 +212,17 @@ a.menu {
     border-left: none;
   }
 }
+
+// .button-text {
+//   font-size: 20px;
+//   display: inline-block;
+//   // width: 224px;
+//   padding-left: 25px;
+//   height: 45px;
+//   // border: 3px solid;
+//   // border-right: none;
+//   transition: 0.2s;
+// }
 
 // red button styles
 .red-button, .red-button:visited, .workout .button {

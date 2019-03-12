@@ -1,6 +1,95 @@
 .blog-container {
   width: 100vw;
   overflow: hidden;
+  img {
+    width: 600px;
+    height: 600px;
+  }
+  h3 {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  // h3:nth-of-type(1),
+  // h3:nth-of-type(6) {
+  //   color: $green;
+  // }
+  // h3:nth-of-type(2),
+  // h3:nth-of-type(7) {
+  //   color: $aqua;
+  // }
+  // h3:nth-of-type(3),
+  // h3:nth-of-type(8) {
+  //   color: $forest;
+  // }
+  // h3:nth-of-type(4),
+  // h3:nth-of-type(9) {
+  //   color: $red;
+  // }
+  // h3:nth-of-type(5),
+  // h3:nth-of-type(10) {
+  //   color: $orange;
+  // }
+  .content-container {
+    .row {
+      margin-top: 50px;
+      .col-xs-12, .col-sm-6 {
+        padding: 0;
+        p, h3 {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+
+  // img[title="image-1"],
+  // img[title="image-3"],
+  // img[title="image-5"],
+  // img[title="image-7"],
+  // img[title="image-9"],
+  // img[title="image-11"] {
+  //   float: left;
+  // }
+  // img[title="image-2"],
+  // img[title="image-4"],
+  // img[title="image-6"],
+  // img[title="image-8"],
+  // img[title="image-10"],
+  // img[title="image-12"] {
+  //   float: right;
+  // }
+  // img[title="image-1"] + h3,
+  // img[title="image-1"] + p,
+  // img[title="image-3"] + h3,
+  // img[title="image-3"] + p,
+  // img[title="image-5"] + h3,
+  // img[title="image-5"] + p,
+  // img[title="image-7"] + h3,
+  // img[title="image-7"] + p,
+  // img[title="image-9"] + h3,
+  // img[title="image-9"] + p,
+  // img[title="image-11"] + h3,
+  // img[title="image-11"] + p {
+  //   float: right;
+  // }
+  // img[title="image-2"] + h3,
+  // img[title="image-2"] + p,
+  // img[title="image-4"] + h3,
+  // img[title="image-4"] + p,
+  // img[title="image-6"] + h3,
+  // img[title="image-6"] + p,
+  // img[title="image-8"] + h3,
+  // img[title="image-8"] + p,
+  // img[title="image-10"] + h3,
+  // img[title="image-10"] + p,
+  // img[title="image-12"] + h3,
+  // img[title="image-12"] + p {
+  //   float: left;
+  // }
 }
 
 .post-hero {
