@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reminders
 permalink: "/reminders"
 active: reminders
 ---

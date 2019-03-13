@@ -874,7 +874,7 @@ footer {
           padding: 0;
           line-height: 1.2;
           margin: 0 auto;
-          font-size: 30px;
+          font-size: 25px;
           margin-top: -100px; }
   .success-stories-container a.control_prev3, .success-stories-container a.control_next3 {
     position: absolute;
@@ -1455,16 +1455,47 @@ footer {
 .blog-container {
   width: 100vw;
   overflow: hidden; }
-  .blog-container img {
-    width: 600px;
-    height: 600px; }
+  .blog-container iframe {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    min-width: 290px; }
+  .blog-container .content-container img {
+    width: 50%;
+    max-width: 600px;
+    min-width: 290px;
+    height: auto;
+    display: block;
+    margin: 20px auto; }
   .blog-container h3 {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-size: 70px; }
+    font-size: 60px;
+    margin-top: 40px; }
   .blog-container p {
     line-height: 1.5; }
+  .blog-container h3:nth-of-type(1),
+  .blog-container h3:nth-of-type(6),
+  .blog-container h3:nth-of-type(11) {
+    color: #84C440; }
+  .blog-container h3:nth-of-type(2),
+  .blog-container h3:nth-of-type(7),
+  .blog-container h3:nth-of-type(12) {
+    color: #4DBFA8; }
+  .blog-container h3:nth-of-type(3),
+  .blog-container h3:nth-of-type(8),
+  .blog-container h3:nth-of-type(13) {
+    color: #009171; }
+  .blog-container h3:nth-of-type(4),
+  .blog-container h3:nth-of-type(9),
+  .blog-container h3:nth-of-type(14) {
+    color: #E21E26; }
+  .blog-container h3:nth-of-type(5),
+  .blog-container h3:nth-of-type(10),
+  .blog-container h3:nth-of-type(15) {
+    color: #F68C1E; }
   .blog-container .content-container .row {
     margin-top: 50px; }
     .blog-container .content-container .row .col-xs-12, .blog-container .content-container .row .col-sm-6 {
@@ -1686,6 +1717,13 @@ h4.health-tips {
   .comment-section form {
     margin: 0 25px; } }
 @media (max-width: 1200px) {
+  .blog-container .content-inner {
+    width: 95%; }
+
+  .content-container {
+    min-width: 290px;
+    margin: 0 auto; }
+
   .post-hero .box h2 {
     font-size: 52px;
     padding: 50px;
@@ -1733,6 +1771,11 @@ h4.health-tips {
     .share-like-section .red-background .button .button-text {
       width: 123px; } }
 @media (max-width: 767px) {
+  .blog-container h3 {
+    font-size: 40px; }
+  .blog-container p {
+    font-size: 18px; }
+
   .post-hero .col-xs-0 {
     display: none; }
   .post-hero .box {
@@ -1773,6 +1816,11 @@ h4.health-tips {
   .related-posts .row .sub-box p, .related-posts .row .post-preview-image p {
     font-size: 22px; } }
 @media (max-width: 455px) {
+  .blog-container h3 {
+    font-size: 30px; }
+  .blog-container p {
+    font-size: 14px; }
+
   .post-hero .box h2 {
     font-size: 40px;
     margin-bottom: 15px; }
@@ -1833,6 +1881,108 @@ h4.health-tips {
     .comment-section form .button {
       display: block;
       margin: 10px auto !important; } }
+.products-hero {
+  padding: 0;
+  width: 100vw;
+  background-color: #84C440;
+  background-size: 2400px 600px;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .products-hero .box-5 {
+    background-color: #84C440; }
+  .products-hero .image-box {
+    background-image: url("/img/backgrounds/circle-pattern.png");
+    background-size: cover; }
+
+.product-list {
+  padding: 50px 0; }
+  .product-list .col-xs-12, .product-list .col-xs-0, .product-list .col-sm-9, .product-list .col-sm-3 {
+    padding: 0;
+    margin: 0; }
+  .product-list .product-icon {
+    width: 100%;
+    height: auto; }
+  .product-list .row {
+    padding: 25px; }
+  .product-list h4, .product-list h5 {
+    line-height: 1 !important;
+    padding: 0;
+    margin: 0; }
+  .product-list h4 {
+    margin-top: 25px;
+    font-size: 55px; }
+  .product-list p {
+    font-size: 22px;
+    margin-left: 15px; }
+  .product-list ul {
+    list-style-type: none;
+    margin-top: 75px;
+    float: right;
+    margin-right: 100px; }
+    .product-list ul li {
+      display: inline-flex; }
+      .product-list ul li img {
+        width: 180px; }
+
+@media (max-width: 1110px) {
+  .product-list .row {
+    padding: 15px; }
+  .product-list h4 {
+    font-size: 45px; }
+  .product-list h5 {
+    font-size: 30px;
+    margin-top: 15px; } }
+@media (max-width: 890px) {
+  .product-list .row {
+    padding: 15px; }
+  .product-list h4 {
+    font-size: 35px; }
+  .product-list h5 {
+    font-size: 25px; } }
+@media (max-width: 767px) {
+  .product-list .col-xs-0 {
+    display: none; }
+  .product-list .row {
+    padding: 15px; }
+  .product-list h4 {
+    font-size: 35px; }
+  .product-list h5 {
+    font-size: 25px; }
+  .product-list ul {
+    margin-top: 20px; } }
+@media (max-width: 500px) {
+  .product-list h4 {
+    font-size: 30px; }
+  .product-list h5 {
+    font-size: 20px; }
+  .product-list p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 20px; }
+  .product-list ul {
+    margin-top: 20px; } }
+@media (max-width: 430px) {
+  .product-list .col-xs-4, .product-list .col-xs-8 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: 100%;
+    text-align: center; }
+  .product-list h4 {
+    font-size: 30px; }
+  .product-list h5 {
+    font-size: 20px; }
+  .product-list p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 20px; }
+  .product-list ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    float: none;
+    width: 220px;
+    margin: 0 auto;
+    text-align: center; } }
 html {
   font-family: 'Montserrat 400', Arial, sans-serif; }
 

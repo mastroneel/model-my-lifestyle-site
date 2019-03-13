@@ -9,7 +9,7 @@ image: /img/blog-img/fasting-1.jpeg
 ---
 
 
-The Age Of Making Fasting A Dietary Requirement Has Arrived
+### The Age Of Making Fasting A Dietary Requirement Has Arrived
 
 ![image](/img/blog-img/fasting-1.jpeg)
 
@@ -21,7 +21,7 @@ Empty plate and kitchen towel
 
 ![image](/img/blog-img/fasting-2.jpg)
 
-##### Why Should One Opt For Fasting?
+### Why Should One Opt For Fasting?
 
 Fasting, or better known as intermittent fasting is proven to be a safer option for achieving the previously mentioned benefits. Done gradually and correctly, it can give your body the boost it needs to metabolize future foods consumed. Additionally, according to Dr. Michael Mosley, the author of The Fast Diet, fasting can ensure that the body becomes an effective fat burning furnace.
 
@@ -44,5 +44,3 @@ Clarity Of Mind Empowers Your Will
 Use past experience and knowledge to bolster yourself for the challenge of fasting. You truly do not know how strong you are until you overcome difficulties.
 
 Trust your instincts and truly listen to your body by giving it what it needs and not what you want. Inspirational quotes are further aid on this journey, so use as many as you can until you create your own personal mantra!
-
-Article Written By: Jennifer Dawson

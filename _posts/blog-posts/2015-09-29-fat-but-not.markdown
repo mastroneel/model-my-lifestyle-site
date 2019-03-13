@@ -10,7 +10,7 @@ image: /img/blog-img/fat-1.jpg
 
 
 
-##### "I’m Fat, But I’m Not…" The Buzzfeed Video That is Challengeing Fat Stereotypes
+### "I’m Fat, But I’m Not…" The Buzzfeed Video That is Challengeing Fat Stereotypes
 
 ![image](/img/blog-img/fat-1.jpg)
 

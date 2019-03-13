@@ -9,11 +9,11 @@ image: /img/blog-img/tracking-4.jpg
 ---
 
 
-##### The Must-have Health And Fitness Tracking App
+### The Must-have Health And Fitness Tracking App
 
 ![image](/img/blog-img/tracking-1.jpg "image-1")
 
-##### The Newest Way To Track Your Progress
+### The Newest Way To Track Your Progress
 
 ![image](/img/blog-img/tracking-2.png "image-2")
 
@@ -30,8 +30,6 @@ See your future healthy self from all angles –– take progress pictures to ke
 Available Features
 
 The tracker app is free, although has in-app purchases available for those who wish to get added features to make their experience that much better! Our application requires iOS 9.0 or later and is compatible with the iPhone, iPad and iPod touch. Here are just a number of the unique features available on our most recent update to the iOS Model My Diet app.
-
-1
 
 Track your daily weight change with daily weigh-ins and weigh-in streaks.
 Monitor your stats and progress after inputting data such as your height and weight (start, current and goal).

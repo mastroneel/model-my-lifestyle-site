@@ -9,7 +9,7 @@ image: /img/blog-img/body-image-1.jpg
 ---
 
 
-##### The Relationship Between Body Image and Disordered Eating
+### The Relationship Between Body Image and Disordered Eating
 
 ![image](/img/blog-img/body-image-1.jpg "image-1")
 

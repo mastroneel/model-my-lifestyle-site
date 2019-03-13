@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: calculators
 permalink: "/calculators"
 active: calculators
 ---

@@ -10,7 +10,7 @@ image: /img/blog-img/sweetener-2.jpg
 
 
 
-##### Seeking Artificial Sweeteners to Lose Weight? Think Again!
+### Seeking Artificial Sweeteners to Lose Weight? Think Again!
 
 ![image](/img/blog-img/sweetener-1.png)
 
@@ -21,7 +21,8 @@ Artificial sweeteners are much sweeter than natural sugar which is the reason wh
 
 ![image](/img/blog-img/sweetener-2.jpg)
 
-Health Concerns
+### Health Concerns
+
 It turns out that skipping out on the calories through synthetic sweeteners may be hurting us more than what we anticipated. Millions find it harmful to sip on “diet” soda daily, although what they don’t realize is that they may be setting themselves up for more health problems. Several studies have shown adverse effects on those who consume sugar substitutes regularly in comparison to those who do not. In fact, issues with our metabolism, gut health and overall appetite have been correlated to the consumption of artificial sweeteners.
 
 ![image](/img/blog-img/sweetener-3.jpg)

@@ -1,39 +1,58 @@
 .blog-container {
   width: 100vw;
   overflow: hidden;
-  img {
-    width: 600px;
-    height: 600px;
+  iframe {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    min-width: 290px;
+  }
+  .content-container {
+    img {
+      width: 50%;
+      max-width: 600px;
+      min-width: 290px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
   }
   h3 {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-size: 70px;
+    font-size: 60px;
+    margin-top: 40px;
   }
   p {
     line-height: 1.5;
   }
-  // h3:nth-of-type(1),
-  // h3:nth-of-type(6) {
-  //   color: $green;
-  // }
-  // h3:nth-of-type(2),
-  // h3:nth-of-type(7) {
-  //   color: $aqua;
-  // }
-  // h3:nth-of-type(3),
-  // h3:nth-of-type(8) {
-  //   color: $forest;
-  // }
-  // h3:nth-of-type(4),
-  // h3:nth-of-type(9) {
-  //   color: $red;
-  // }
-  // h3:nth-of-type(5),
-  // h3:nth-of-type(10) {
-  //   color: $orange;
-  // }
+  h3:nth-of-type(1),
+  h3:nth-of-type(6),
+  h3:nth-of-type(11) {
+    color: $green;
+  }
+  h3:nth-of-type(2),
+  h3:nth-of-type(7),
+  h3:nth-of-type(12) {
+    color: $aqua;
+  }
+  h3:nth-of-type(3),
+  h3:nth-of-type(8),
+  h3:nth-of-type(13) {
+    color: $forest;
+  }
+  h3:nth-of-type(4),
+  h3:nth-of-type(9),
+  h3:nth-of-type(14) {
+    color: $red;
+  }
+  h3:nth-of-type(5),
+  h3:nth-of-type(10),
+  h3:nth-of-type(15) {
+    color: $orange;
+  }
   .content-container {
     .row {
       margin-top: 50px;
@@ -397,6 +416,15 @@ h4.health-tips {
 }
 
 @media (max-width: 1200px) {
+  .blog-container {
+    .content-inner {
+      width: 95%;
+    }
+  }
+  .content-container {
+    min-width: 290px;
+    margin: 0 auto;
+  }
   .post-hero {
     .box {
       h2 {
@@ -505,6 +533,14 @@ h4.health-tips {
 
 
 @media (max-width: 767px) {
+  .blog-container {
+    h3 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
   .post-hero {
     .col-xs-0 {
       display: none;
@@ -589,6 +625,14 @@ h4.health-tips {
 }
 
 @media (max-width: 455px) {
+  .blog-container {
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
   .post-hero {
     .box {
       h2 {

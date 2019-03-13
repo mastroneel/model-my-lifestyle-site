@@ -9,7 +9,7 @@ image: /img/blog-img/summer-foods-1.jpeg
 ---
 
 
-##### Losing Weight While Enjoying Your Favourite Summer Foods
+### Losing Weight While Enjoying Your Favourite Summer Foods
 
 ![image](/img/blog-img/summer-foods-1.jpeg "image-1")
 
@@ -17,7 +17,7 @@ With winter slowly coming to an end, patio season is just around the corner, whi
 
 If you wondered whether or not you could still enjoy summer barbecues while on a weight loss program, the answer, is yes –– the secret simply lies in the ingredients!
 
-##### Barbecues: The Preferred Diet For Millennials
+### Barbecues: The Preferred Diet For Millennials
 
 ![image](/img/blog-img/summer-foods-2.jpeg "image-2")
 
@@ -32,7 +32,7 @@ It is common for doctors to recommend both the Mediterranean and Paleo diets bec
 
 By chopping up lettuce, vegetables, and other ingredients and storing them in different airtight containers, you can whip up your favourite salad or barbecue side quickly, without having to clean and chop ingredients every day.
 
-##### Tips for Healthy & Tasty Barbecues
+### Tips for Healthy & Tasty Barbecues
 
 Keen barbecuers know that the secret to success, lies in the marinade. All American states have their own grilling styles and marinades, and you can remain true to your traditions –– as well as try out new recipes, by making a few simple changes.
 
@@ -42,5 +42,3 @@ Take wet Memphis ribs for instance, often made with a sweet tomato-and-vinegar s
 
 
 Barbecued dishes, whether meat or veggies work fantastically for Paleo, Keto and Mediterranean diets; essentially, the primary consideration should be taking extra care with the ingredients you use for sauces and marinade. Replace sugar with low carb, natural (not artificial) sweeteners and use them sparingly; serve healthy sides such as salads and barbecued veggies, foregoing rich sauces in favour of simple yet healthy alternatives made with ingredients like extra virgin olive oil, lemon and garlic. The best thing about enjoying a barbecue while on a diet, is that nobody will even notice that anything has changed –– because every bite will taste as lip smackingly delicious at it always has.
-
-Article written & submitted by: Jennier Dawson

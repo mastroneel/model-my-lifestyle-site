@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: products
 permalink: /products
 active: products
 ---

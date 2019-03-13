@@ -8,7 +8,7 @@ permalink: "/ashley-graham"
 image: /img/blog-img/ashley-2.jpg
 ---
 
-How to Embrace Your New Curves: Let Ashley Graham Show You with Her New Lingerie Collection
+### How to Embrace Your New Curves: Let Ashley Graham Show You with Her New Lingerie Collection
 
 ![image](/img/blog-img/ashley-1.jpg)
 
@@ -37,7 +37,7 @@ As a woman who lost some weight recently herself, I realize that choosing new cl
 Many women with curvaceous or bigger bodies are fed up, because searching for clothes that fit them has become somewhat of a treasure hunt.
 
 
- So much so that a movie like the Sisterhood of the Travelling Pants really resonates, because we have all gone through the exhilaration of finding something that fits us and suddenly wearing it everywhere.
+So much so that a movie like the Sisterhood of the Travelling Pants really resonates, because we have all gone through the exhilaration of finding something that fits us and suddenly wearing it everywhere.
 
 In my case, whenever I find anything that fits me well, I become loyal to that brand, since that brand understands my body type.
 
@@ -53,7 +53,7 @@ Ashley Graham’s collection reminds me that my body deserves to feel sexy. The 
 ![image](/img/blog-img/ashley-5.jpg)
 
 
-Check out some more pictures from NYFW I Am Sexy show below.
+### Check out some more pictures from NYFW I Am Sexy show below.
 
 ![image](/img/blog-img/ashley-6.jpg)
 
