@@ -2,7 +2,7 @@
 layout: post
 title:  "Eric"
 date:   2019-03-08 08:49:27 +0800
-categories: success
+categories: success reg-success
 permalink: "/eric"
 image: /img/success-stories/eric.jpg
 pounds: -XXlbs

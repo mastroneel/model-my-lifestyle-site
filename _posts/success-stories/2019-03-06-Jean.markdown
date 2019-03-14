@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Kristine"
-date:   2019-03-09 08:49:27 +0800
-categories: success big-success
-permalink: "/kristine"
-image: /img/success-stories/kristine.png
+title:  "Jean"
+date:   2019-03-05 08:49:27 +0800
+categories: success reg-success
+permalink: "/jean"
+image: /img/success-stories/woman-1.jpeg
 pounds: -15lbs
 quote: This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!
 ---

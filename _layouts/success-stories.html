@@ -1,0 +1,278 @@
+---
+layout: default
+---
+
+<div class="box-white-container success-stories-hero">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="box box-5">
+          <h2 class="pink">
+            Your Success
+          </h2>
+          <h4 class="pink">
+            Don't take our word for it. Check out our members' successes and get inspired to start your journey.
+          </h4>
+        </div>
+      </div>
+      <div class="col-xs-0 col-sm-6">
+        <div class="box trophy-bg">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="inner biggest-success">
+  <h4 class="red">Biggest success:</h4>
+  {% for post in site.categories.big-success limit:1 %}
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-6">
+      <div class="box" style="background-image: url('{{post.image}}');">
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="box red-background center">
+        <div class="text-container">
+          <h3 class="pink">
+            {{post.title}},
+          </h3>
+          <h6 class="pink">
+            {{post.pounds}}
+          </h6>
+          <p class="white">
+            "{{post.quote}}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  {% for post in site.categories.big-success limit:1 offset:1 %}
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="box" style="background-image: url('{{post.image}}');">
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="box orange-background center">
+        <div class="text-container">
+          <h3 class="yellow">
+            {{post.title}},
+          </h3>
+          <h6 class="yellow">
+            {{post.pounds}}
+          </h6>
+          <p class="white">
+            "{{post.quote}}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <h4 class="aqua">More inspiring success stories:</h4>
+  <div class="row">
+    {% for post in site.categories.reg-success limit:1 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/green-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small green-background">
+            <div class="text-container">
+              <h3 class="lime">
+                {{post.title}},
+              </h3>
+              <h6 class="lime">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% for post in site.categories.reg-success limit:1 offset:1 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/forest-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small forest-background">
+            <div class="text-container">
+              <h3 class="aqua">
+                {{post.title}},
+              </h3>
+              <h6 class="aqua">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% for post in site.categories.reg-success limit:1 offset:2 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/forest-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small forest-background">
+            <div class="text-container">
+              <h3 class="aqua">
+                {{post.title}},
+              </h3>
+              <h6 class="aqua">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% for post in site.categories.reg-success limit:1 offset:3 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/green-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small green-background">
+            <div class="text-container">
+              <h3 class="lime">
+                {{post.title}},
+              </h3>
+              <h6 class="lime">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% for post in site.categories.reg-success limit:1 offset:4 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/green-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small green-background">
+            <div class="text-container">
+              <h3 class="lime">
+                {{post.title}},
+              </h3>
+              <h6 class="lime">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    {% for post in site.categories.reg-success limit:1 offset:5 %}
+    <div class="col-xs-12 col-sm-6">
+      <div class="row center">
+        <div class="col-xs-6">
+          <div class="success-box-small" style="background-image: url('{{post.image}}');">
+            <a href="{{post.permalink}}">
+              <img src="/img/icons/forest-button.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="success-box-small forest-background">
+            <div class="text-container">
+              <h3 class="aqua">
+                {{post.title}},
+              </h3>
+              <h6 class="aqua">
+                {{post.pounds}}
+              </h6>
+              <p class="white">
+                "{{post.quote}}"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+<div class="our-company-contact-section green-background success-contact-form">
+  <div class="inner">
+    <div class="content-margins">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="lime">
+            Tell us your story
+          </h4>
+          <form class="company-page-contact-form" method="post">
+            <input class="half-width" type="text" name="name" value="" placeholder="name" />
+            <input class="half-width half-width-2" type="email" name="email" value="" placeholder="email" />
+            <textarea name="message" rows="8" cols="80" placeholder="message"></textarea>
+            <a class="button green-button toggle" type="submit">
+              <span class="button-text">Send</span><span class="caret">></span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

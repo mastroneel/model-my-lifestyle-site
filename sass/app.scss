@@ -35,6 +35,8 @@
 @import 'category-pages';
 @import 'post';
 @import 'products';
+@import 'our-company';
+@import 'success-stories';
 
 // **************
 // general styles
@@ -150,8 +152,16 @@ a.menu {
   text-align: right;
 }
 
+.white {
+  color: $white;
+}
+
 .orange {
   color: $orange;
+}
+
+.dark-orange {
+  color: $dark-orange;
 }
 
 .green {

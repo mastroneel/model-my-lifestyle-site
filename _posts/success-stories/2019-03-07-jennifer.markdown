@@ -2,7 +2,7 @@
 layout: post
 title:  "Jennifer"
 date:   2019-03-07 09:49:27 +0800
-categories: success
+categories: success big-success
 permalink: "/jennifer"
 image: /img/success-stories/jennifer.jpg
 pounds: -175lbs
