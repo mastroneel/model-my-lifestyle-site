@@ -1,0 +1,131 @@
+.form-container {
+  position: relative;
+  padding: 50px;
+  h4 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    line-height: 1
+  }
+  form {
+    input {
+      height: 45px;
+      width: 85%;
+      line-height: 45px;
+      color: $forest;
+      font-size: 18px;
+      margin-top: 25px;
+      font-family: 'Montserrat 400';
+      border: none;
+    }
+    .button {
+      float: right;
+      margin-right: 15%;
+    }
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $forest;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $forest;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $forest;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $forest;
+  }
+  .right-column {
+    .button-1 {
+      position: absolute;
+      right: 50px;
+      top: 120px;
+      .button-text {
+        font-size: 18px !important;
+      }
+    }
+    .button-2 {
+      position: absolute;
+      right: 50px;
+      top: 190px;
+      .button-text {
+        font-size: 18px !important;
+      }
+    }
+    .login-instructions {
+      position: absolute;
+      right: 50px;
+      top: 280px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .form-container {
+    .right-column {
+      .button-1 {
+        position: static;
+      }
+      .button-2 {
+        position: static;
+      }
+      .login-instructions {
+        position: relative;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .form-container {
+    padding: 50px 25px;
+    h4 {
+      padding-top: 25px;
+    }
+    .right-column {
+      .button-1 {
+        position: static;
+      }
+      .button-2 {
+        position: static;
+      }
+      .login-instructions {
+        position: static;
+      }
+    }
+    form {
+      .button {
+        float: none;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .form-container {
+    padding: 50px 15px;
+    .right-column {
+      .button-1, .button-2 {
+        width: 250px;
+        .button-text {
+          width: 174px;
+          font-size: 14px !important;
+        }
+      }
+    }
+    form {
+      input {
+        width: 100%;
+      }
+      .button {
+        width: 250px;
+        .button-text {
+          width: 174px;
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
