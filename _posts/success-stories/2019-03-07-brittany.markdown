@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: individual-success-story
 title:  "Brittany"
 date:   2019-03-07 08:49:27 +0800
 categories: success reg-success
@@ -7,10 +7,13 @@ permalink: "/brittany"
 image: /img/success-stories/brittany-1.jpg
 pounds: -41lbs
 quote: I’ve always been bigger. I had a really difficult home life growing up, and I was an emotional eater. When I was sad, I would eat. When I was scared, I would eat.
+member-since: 2018
 ---
 
 
-### How Brittany Wolfe Lost 40 Pounds in Four Months
+<h3 class="green">
+How Brittany Wolfe Lost 40 Pounds in Four Months
+</h3>
 
 Brittany Wolfe recounts her story of how she lost 40 pounds in four months after a chance meeting with friends that inspired her to change her life around. Below are her before and after picture; going from 263 pounds to 222. Read an excerpt from her post below.
 

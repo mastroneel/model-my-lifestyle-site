@@ -1,0 +1,173 @@
+---
+layout: default
+---
+
+<div class="box-white-container success-stories-hero individual-success-story-hero">
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-0 col-sm-6">
+        <div class="box" style="background-image: url('{{page.image}}');">
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="box red-background center">
+          <div class="text-container">
+            <h3 class="pink">
+              {{page.title}},
+            </h3>
+            <h6 class="pink">
+              {{page.pounds}}
+            </h6>
+            <p class="white">
+              "{{page.quote}}"
+            </p>
+            <p class="pink">
+              member since {{page.member-since}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="inner individual-success-story-inner">
+  <div class="success-content-container">
+
+
+
+    {{content}}
+
+  </div>
+
+<div class="page-divider"></div>
+
+
+
+
+<!-- {% for category in page.categories limit:1 offset:1 %} -->
+  {% assign moreThanOneInCategory = false %}
+  {% assign posts = site.categories[category] %}
+
+  {% for post in posts %}
+    {% if forloop.length > 1 %}
+      {% assign moreThanOneInCategory = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if moreThanOneInCategory == true %}
+    <!-- <div class="related-posts"> -->
+      <h4 class="green">More success stories</h4>
+
+      <div class="row">
+
+
+
+        {% for post in site.categories.success limit:1 offset:1 %}
+          {% unless post.url == page.url %}
+          <div class="col-xs-12 col-sm-6">
+            <div class="row center">
+              <div class="col-xs-6">
+                <div class="success-box-small" style="background-image: url('{{post.image}}');">
+                  <a href="{{post.permalink}}">
+                    <img src="/img/icons/green-button.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="success-box-small green-background">
+                  <div class="text-container">
+                    <h3 class="lime">
+                      {{post.title}},
+                    </h3>
+                    <h6 class="lime">
+                      {{post.pounds}}
+                    </h6>
+                    <p class="white">
+                      "{{post.quote}}"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endunless %}
+        {% endfor %}
+
+        {% for post in site.categories.success limit:1 offset:2 %}
+          {% unless post.url == page.url %}
+          <div class="col-xs-12 col-sm-6">
+            <div class="row center">
+              <div class="col-xs-6">
+                <div class="success-box-small" style="background-image: url('{{post.image}}');">
+                  <a href="{{post.permalink}}">
+                    <img src="/img/icons/forest-button.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="success-box-small forest-background">
+                  <div class="text-container">
+                    <h3 class="aqua">
+                      {{post.title}},
+                    </h3>
+                    <h6 class="aqua">
+                      {{post.pounds}}
+                    </h6>
+                    <p class="white">
+                      "{{post.quote}}"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    <!-- </div> -->
+  {% endif %}
+<!-- {% endfor %} -->
+
+
+
+
+</div>
+<!-- end inner -->
+
+
+<div class="share-like-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 orange-background">
+      <div class="inner">
+      <h4 class="yellow">Share this</h4>
+      <ul>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/google-plus.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="footer-logo" src="/img/social-icons/twitter.png" />
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 red-background">
+      <div class="inner">
+      <h4 class="pink">Like this</h4>
+      <a class="button red-button toggle" href="#">
+        <span class="button-text">Like</span><span class="caret center"><img src="/img/icons/like-button.png" /></span>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>

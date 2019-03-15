@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: individual-success-story
 title:  "Kristine"
 date:   2019-03-09 08:49:27 +0800
 categories: success big-success
@@ -7,10 +7,73 @@ permalink: "/kristine"
 image: /img/success-stories/kristine.png
 pounds: -15lbs
 quote: This will never be a "diet" for me, this has been a complete lifestyle change. I am happer, healthier and more full of life!
+member-since: 2018
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<p>
+Kristine, a member since 2003 shares her journey on the program.
+</p>
+<h3 class="green">
+What happened in 2003 that made you become a member?
+</h3>
+<p>
+In 2003 I was in Grade 10 in high school and I was always the biggest of my whole family, the biggest of my friends and [at that age] it really matters what you are wearing, and everyone was sharing clothes and that was never something I was able to do.
+<br><br>
+I was shopping for a sweet 16 birthday party at a store that I normally went to didn't have anything that fit me. The biggest size wouldn't do up and I decided that Weight Watchers was something I needed to do, and I literally went the next day.
+</p>
+</div>
+<div class="col-xs-12 col-md-6">
+<img src="/img/success-stories/kristine-2.png" />
+</div>
+</div>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="row desktop-row">
+<div class="col-xs-12 col-md-6">
+<img src="/img/success-stories/kristine-3.png" />
+</div>
+<div class="col-xs-12 col-md-6">
+<h3 class="green">
+What was the first day like?
+</h3>
+<p>
+I walked in to the meeting and it was not at all what I thought it would be. It was so much better. I don't know what I was expecting. I thought they were going to weigh and measure me in front of everybody and it was going to be a whole scene and it wasn't. It was a really warm, welcoming environment The leader came right up to me. and it was just a group of normal people. I just sat in the back quietly. No one pressured me to say anything or do anything it was at my own pace which I really appreciated. Now, I literally don't stop speaking. I sit in the front, my hand is always up. and it's very different now than it was before.
+</p>
+</div>
+</div>
+
+<div class="row mobile-row">
+<div class="col-xs-12 col-md-6">
+<h3 class="green">
+What was the first day like?
+</h3>
+<p>
+I walked in to the meeting and it was not at all what I thought it would be. It was so much better. I don't know what I was expecting. I thought they were going to weigh and measure me in front of everybody and it was going to be a whole scene and it wasn't. It was a really warm, welcoming environment The leader came right up to me. and it was just a group of normal people. I just sat in the back quietly. No one pressured me to say anything or do anything it was at my own pace which I really appreciated. Now, I literally don't stop speaking. I sit in the front, my hand is always up. and it's very different now than it was before.
+</p>
+</div>
+<div class="col-xs-12 col-md-6">
+<img src="/img/success-stories/kristine-3.png" />
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-6">
+<h3 class="green">
+How do you work the program at your own pace?
+</h3>
+<p>
+At first I was able to sit at the back, no one asked me any questions, no one made me talk, so I was really just able to take it slowly and just sit, and listen, absorb it and not have to do anything that was outside of my comfort zone.
+</p>
+<h3 class="green">
+What have you learned in regards to food and nutrition?
+</h3>
+<p>
+I always assumed that Weight Watchers was going to be like a diet, so that I would have to give up everything I ever ate I was going to have to eat lettuce and celery and grilled chicken. I didn't know. really anything about nutrition. I was corning from eating fast food a lot, and a lot of takeout I learned a lot about healthy foods. I really started to learn more about the benefits of eating healthy foods, with higher protein and. less processed foods. With whole healthy foods, you feel a lot better. And when you go back to eating fast foods you - they don't taste the same, so I really learned that mentally and physically it's a lot better for you.
+</p>
+</div>
+<div class="col-xs-12 col-md-6">
+<img src="/img/success-stories/kristine-4.png" />
+</div>
+</div>

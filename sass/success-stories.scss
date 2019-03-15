@@ -34,7 +34,7 @@
   }
 }
 
-.biggest-success {
+.biggest-success, .individual-success-story-hero {
   padding-bottom: 50px;
   .col-xs-12, .col-sm-6, .col-xs-6 {
     padding: 0;
@@ -91,9 +91,15 @@
       position: absolute;
       top: 0;
       right: -1px;
+      img {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 }
+
+
 
 .success-contact-form {
   .half-width {
@@ -102,6 +108,92 @@
   .half-width-2 {
     float: right;
     margin-right: -4px;
+  }
+}
+
+.individual-success-story-hero {
+  padding-bottom: 0;
+  .box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    p.pink {
+      font-size: 14px;
+    }
+  }
+}
+
+.individual-success-story-inner {
+  padding: 50px 0;
+  .col-xs-12 .col-sm-6 {
+    padding: 0;
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 50px;
+    padding: 25px 0;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 32px;
+    padding: 0 25px;
+    padding-top: 25px;
+  }
+  p {
+    font-size: 20px;
+    padding: 0 25px;
+  }
+  .success-content-container {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 600px;
+      height: 600px;
+    }
+  }
+}
+
+.individual-success-story-inner {
+  .col-xs-12, .col-sm-6, .col-xs-6 {
+    padding: 0;
+    margin: 0;
+  }
+  .success-box-small {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-position: center;
+    .text-container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    h3, h6 {
+      margin: 0;
+      padding: 0;
+      display: inline;
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 0px;
+      line-height: 1.2;
+    }
+    a {
+      position: absolute;
+      top: 0;
+      right: -1px;
+      img {
+        width: 45px !important;
+        height: 45px !important;
+      }
+    }
   }
 }
 
@@ -114,7 +206,7 @@
       font-size: 35px;
     }
   }
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero {
     h4 {
       padding-left: 25px;
     }
@@ -135,9 +227,75 @@
       }
     }
   }
+  .individual-success-story-inner {
+    img {
+      width: 50vw;
+      height: 50vw;
+    }
+    h3 {
+      font-size: 25px;
+      padding: 0 25px;
+      padding-top: 15px;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 25px;
+    }
+    .success-box-small {
+      width: 25vw;
+      height: 25vw;
+      h3, h6 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 0px;
+        line-height: 1.2;
+      }
+      a {
+        img {
+          width: 45px !important;
+          height: 45px !important;
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 950px) {
+@media (min-width: 1024px) {
+  .individual-success-story-inner {
+    .mobile-row {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .individual-success-story-inner {
+    .desktop-row {
+      display: none;
+    }
+    .success-content-container {
+      img {
+        display: block;
+        margin: 25px auto;
+        min-width: 290px;
+        min-height: 290px;
+      }
+    }
+    h3 {
+      font-size: 25px;
+      padding: 0 25px;
+      padding-top: 15px;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 25px;
+    }
+  }
+}
+
+@media (max-width: 975px) {
   .success-stories-hero {
     h2 {
       font-size: 45px;
@@ -147,7 +305,7 @@
       margin-top: -40px;
     }
   }
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero {
     h3, h6 {
       font-size: 40px;
     }
@@ -164,6 +322,49 @@
         line-height: 1.2;
         padding: 15px;
       }
+    }
+  }
+  .individual-success-story-inner {
+    .success-box-small {
+      width: 25vw;
+      height: 25vw;
+      h3, h6 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+        padding: 15px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 825px) {
+  .individual-success-story-inner {
+    .success-box-small {
+      width: 25vw;
+      height: 25vw;
+      h3, h6 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 12px;
+        padding: 15px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .individual-success-story-hero {
+    h3, h6 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+      margin-top: -35px;
     }
   }
 }
@@ -184,7 +385,7 @@
       margin-top: 20px;
     }
   }
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero {
     .box {
       width: 100vw;
       height: 100vw;
@@ -209,11 +410,31 @@
       }
     }
   }
+  .individual-success-story-hero {
+    p {
+      margin-top: -20px;
+    }
+  }
+  .individual-success-story-inner {
+    .success-box-small {
+      width: 50vw;
+      height: 50vw;
+      h3, h6 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 22px;
+        margin-top: 0px;
+        line-height: 1.2;
+        padding: 25px;
+      }
+    }
+  }
 }
 
 
 @media (max-width: 670px) {
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero {
     .success-box-small {
       h3, h6 {
         font-size: 30px;
@@ -221,6 +442,19 @@
       p {
         font-size: 16px;
         margin-top: -30px;
+        line-height: 1.2;
+        padding: 15px;
+      }
+    }
+  }
+  .individual-success-story-inner {
+    .success-box-small {
+      h3, h6 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        margin-top: -10px;
         line-height: 1.2;
         padding: 15px;
       }
@@ -255,7 +489,7 @@
 }
 
 @media (max-width: 500px) {
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero, .individual-success-story-inner {
     h3, h6 {
       font-size: 40px;
     }
@@ -279,7 +513,7 @@
 }
 
 @media (max-width: 475px) {
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero {
     .col-xs-6 {
       width: 100vw;
       max-width: 100vw;
@@ -294,6 +528,26 @@
       p {
         font-size: 16px;
         margin-top: -30px;
+        line-height: 1.2;
+        padding: 15px;
+      }
+    }
+  }
+  .individual-success-story-inner {
+    .col-xs-6 {
+      width: 100vw;
+      max-width: 100vw;
+      flex-basis: 100%;
+    }
+    .success-box-small {
+      width: 100vw;
+      height: 100vw;
+      h3, h6 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 0px;
         line-height: 1.2;
         padding: 15px;
       }
@@ -315,7 +569,7 @@
 }
 
 @media (max-width: 365px) {
-  .biggest-success {
+  .biggest-success, .individual-success-story-hero, .individual-success-story-inner {
     h3, h6 {
       font-size: 30px;
     }
