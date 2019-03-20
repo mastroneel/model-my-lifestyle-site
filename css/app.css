@@ -13,17 +13,16 @@
 .accordion-menu {
   width: 100vw;
   height: auto;
-  min-height: 100%;
-  height: -moz-available;
-  height: -webkit-fill-available;
-  height: fill-available;
+  padding-bottom: 40px;
+  min-height: 100vh;
   display: block;
   position: fixed;
   top: 100px;
   left: 0;
   z-index: 10000;
   background-color: #84C440;
-  overflow: hidden;
+  overflow-y: auto;
+  max-height: calc(100% - 50px);
   display: none; }
 
 .patty {
@@ -339,7 +338,8 @@
     margin: 0;
     padding: 0; }
     .submenu ul .title-item a {
-      font-family: 'Montserrat 700'; }
+      font-family: 'Montserrat 700';
+      padding-left: 5%; }
     .submenu ul .sub-item a {
       font-family: 'Montserrat 400';
       padding-left: 10%; }
@@ -560,6 +560,12 @@
     margin-left: -20px;
     width: 200px;
     margin-top: 20px; } }
+@media (min-width: 1950px) {
+  .our-company-submenu {
+    width: 800px; } }
+@media (min-width: 2350px) {
+  .our-company-submenu {
+    width: 900px; } }
 footer {
   background-color: #009171;
   padding-top: 20px;
